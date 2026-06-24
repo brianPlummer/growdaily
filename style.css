@@ -100,7 +100,9 @@ ol li, ul li { margin-bottom: 0.5rem; line-height: 1.6; font-size: 0.95rem; }
 }
 .card ul li:last-child, .card ol li:last-child { border-bottom: none; }
 .card ul li a, .card ol li a {
-  display: block;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
   padding: 0.75rem 1rem;
   text-decoration: none;
   color: var(--foreground);
@@ -109,6 +111,18 @@ ol li, ul li { margin-bottom: 0.5rem; line-height: 1.6; font-size: 0.95rem; }
   transition: background 0.15s;
 }
 .card ul li a:hover, .card ol li a:hover { background: var(--muted); }
+.tag-manual {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  padding: 0.15rem 0.5rem;
+  border-radius: 999px;
+  background: var(--green-muted);
+  color: var(--green);
+  border: 1px solid var(--green);
+}
 strong { font-weight: 600; }
 em { font-style: italic; }
 code {
