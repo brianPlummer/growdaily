@@ -11,6 +11,8 @@
   --radius: 0.625rem;
   --green: #22c55e;
   --green-muted: #f0fdf4;
+  --red: #dc2626;
+  --red-muted: #fef2f2;
 }
 @media (prefers-color-scheme: dark) {
   :root {
@@ -25,6 +27,8 @@
     --accent: #262626;
     --green: #4ade80;
     --green-muted: #052e16;
+    --red: #f87171;
+    --red-muted: #450a0a;
   }
 }
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -165,6 +169,53 @@ footer {
   border-top: 1px solid var(--border);
   color: var(--muted-foreground);
   font-size: 0.85rem;
+}
+/* Quadrant report: 2x2 tile grid with per-tile status badges */
+.quad-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+  margin: 1rem 0 1.5rem;
+}
+.quad-grid figure { margin: 0; }
+.quad-grid img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+.quad-grid figcaption {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin-top: 0.4rem;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+.badge {
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  padding: 0.15rem 0.5rem;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+.badge-ok { background: var(--green-muted); color: var(--green); border: 1px solid var(--green); }
+.badge-attention { background: var(--red-muted); color: var(--red); border: 1px solid var(--red); }
+.tag-quad {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  padding: 0.15rem 0.5rem;
+  border-radius: 999px;
+  background: var(--muted);
+  color: var(--muted-foreground);
+  border: 1px solid var(--border);
 }
 @media (max-width: 600px) {
   body { padding: 1.25rem 1rem; }
