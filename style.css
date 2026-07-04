@@ -170,6 +170,35 @@ footer {
   color: var(--muted-foreground);
   font-size: 0.85rem;
 }
+/* Inline markdown images: clickable figures; consecutive ones share a row */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin: 1rem 0 1.25rem;
+}
+.gallery .md-figure {
+  flex: 1 1 210px;
+  max-width: 250px;
+  margin: 0;
+}
+.gallery .md-figure:only-child {
+  flex-basis: 100%;
+  max-width: 100%;
+}
+.md-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+.md-figure figcaption {
+  font-size: 0.8rem;
+  color: var(--muted-foreground);
+  margin-top: 0.35rem;
+}
+
 /* Quadrant report: 2x2 tile grid with per-tile status badges */
 .quad-grid {
   display: grid;
