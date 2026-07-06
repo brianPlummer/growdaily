@@ -63,7 +63,9 @@
   #lb{position:fixed;inset:0;background:rgba(0,0,0,.92);display:none;
     align-items:center;justify-content:center;cursor:zoom-out;z-index:50;padding:24px}
   #lb img{max-width:100%;max-height:100%;border-radius:8px}
+  :root{--foreground:var(--ink);--muted-foreground:var(--mut);--border:var(--line);--radius:10px}
 </style>
+<link rel="stylesheet" href="../kb-popover.css">
 </head>
 <body>
 <div class="wrap">
@@ -84,17 +86,23 @@
 
 <div class="verdict">
   <span class="pill good">Healthy · on track</span>
-  <p class="big">Five days on from 7/1, the plant is <span class="trend">clearly ahead</span> — the canopy has filled in from a netted plane with visible gaps into a near-solid layer of fattening, frosty tops, and pistil clusters are denser and swelling. Color is deep green through the actively growing tops and new growth is clean. The one live item is the same one from 7/1: the interior/lower-leaf yellowing has become a touch more widespread as <b>yellow tips and margins</b> on some interior fan leaves. It still reads as normal mid-flower fade (you fed a tea + top-dress 7/2) and is <b>not</b> climbing into the tops, but it's worth watching. No pests, powdery mildew, mold, or bleaching in any of the eight shots. Soil surface is drying — you're due for a water.</p>
+  <p class="big">Five days on from 7/1, the plant is <span class="trend">clearly ahead</span> — the canopy has filled in from a netted plane with visible gaps into a near-solid layer of fattening, frosty tops, and pistil clusters are denser and swelling. Color is deep green through the actively growing tops and new growth is clean. The one live item is the interior-fan yellowing from 7/1, and — being straight with you — it <b>has progressed</b>: on 7/1 the center shot showed only a few faint yellow tips, and on 7/6 several mid-canopy fan leaves show clear yellow tips/margins, with one margin-yellowed leaf in the close-up. The reassuring part is <b>where</b> it sits: the affected leaves are the older fans at the net plane (now shaded by the colas that grew above them), while the cola tips and newest growth stay deep green — so it is spreading in <b>amount</b>, not yet in <b>altitude</b> into the growing tips. At day ~33 that's on the normal side of mid-flower fade, but the rate is worth a real watch (see the yellowing flag for the 7/2-tea question). No pests, powdery mildew, mold, or bleaching in any of the eight shots. Soil surface is drying — you're due for a water.</p>
 </div>
 
-<h2>1 · What you asked for</h2>
+<details class="report-section" open>
+<summary><h2 id="1-what-you-asked-for">1 · What you asked for</h2><span class="report-section__chev" aria-hidden="true"></span></summary>
+
 <p><b>TLDR —</b> A manual close-up check-in comparing this 7/6 set region-by-region to the 7/1 manual report, and a call on OK / improving / declining. Eight photos this time: overall canopy, side, the four quadrants, center, and an extra <b>up-close of the canopy center</b>. Report generated for review before commit/push.</p>
 <details>
   <summary>Show original prompt</summary>
   <div class="prompt">now lets run a manual report..be sure to compare with the last manually run report on Jul 1..here are the images: a canopy image, a side shot image, bottom left of canopy, top left of canopy, top right of canopy, bottom right, center of canopy, up close of canopy center.</div>
 </details>
 
-<h2>2 · Snapshot</h2>
+</details>
+
+<details class="report-section" open>
+<summary><h2 id="2-snapshot">2 · Snapshot</h2><span class="report-section__chev" aria-hidden="true"></span></summary>
+
 <div class="grid">
   <figure><img src="images/01-canopy.png" alt="canopy"><figcaption><b>Overall canopy</b> <span class="pill good">OK</span> — near-solid canopy of fattening tops, net gaps filled vs 7/1</figcaption></figure>
   <figure><img src="images/02-side-profile.png" alt="side"><figcaption><b>Side profile</b> <span class="pill good">OK</span> — upright, two nets, clean lower structure; soil surface drying</figcaption></figure>
@@ -102,26 +110,38 @@
   <figure><img src="images/08-center-closeup.png" alt="center close-up"><figcaption><b>Center close-up</b> <span class="pill warn">watch</span> — swelling buds; a few interior fans yellowing at the margins</figcaption></figure>
 </div>
 
-<h2>3 · Cola / bud-site count</h2>
+</details>
+
+<details class="report-section" open>
+<summary><h2 id="3-cola-bud-site-count">3 · Cola / bud-site count</h2><span class="report-section__chev" aria-hidden="true"></span></summary>
+
 <div class="count">
   <div><div class="num">~28–40</div><div class="sub">developing bud sites / colas (canopy-wide estimate)</div></div>
   <div><div class="num">~15–20</div><div class="sub">distinct frosty tops in the center frames (img 7–8)</div></div>
 </div>
 <p><b>This is an estimate, not a precise count</b> — slightly up from 7/1's ~25–35 as the canopy filled in and more tops crossed the "distinct frosty top" threshold. Method: counting distinct white-pistil flowering tops in the top-down canopy (img 1) and center (img 7–8), using the scrog squares as a reference. Overlap and occlusion make an exact number unreliable from a photo, so treat the <b>trend</b> as the signal, not the absolute figure. For a true count, tally physically at a defoliation or count occupied scrog squares. (See <code>manual_report_format.md</code>.)</p>
 
-<h2>4 · 7/1 → 7/6, side by side</h2>
+</details>
+
+<details class="report-section" open>
+<summary><h2 id="4-7-1-7-6-side-by-side">4 · 7/1 → 7/6, side by side</h2><span class="report-section__chev" aria-hidden="true"></span></summary>
+
 <table>
   <tr><th>Signal</th><th>7/1 (day ~28)</th><th>7/6 (day ~33)</th><th>Trend</th></tr>
   <tr><td>Pistils / bud swell</td><td>Denser pistils, tops fattening</td><td>Noticeably fatter, frostier tops; pistil clusters swelling</td><td><span class="trend">↑ better</span></td></tr>
   <tr><td>Canopy fill</td><td>Tops above the net, dark gaps + soil visible mid-canopy</td><td>Near-solid canopy; gaps filled, buds occupying the squares</td><td><span class="trend">↑ better</span></td></tr>
   <tr><td>Leaf color (tops)</td><td>Uniform deep green up top</td><td>Still deep green through tops + new growth</td><td>→ steady</td></tr>
-  <tr><td>Leaf color (interior)</td><td>Lower/interior fans yellowing (some removed)</td><td><b>Yellow tips/margins</b> on scattered interior fans — a bit more widespread</td><td>→ watch</td></tr>
+  <tr><td>Leaf color (interior)</td><td>A few faint yellow tips on interior fans</td><td><b>Yellow tips/margins on several mid-canopy fans</b> — clearly more than 7/1; still on older/shaded leaves, not the tops</td><td><span class="warn-txt" style="color:var(--warn);font-weight:700">↑ progressing (watch)</span></td></tr>
   <tr><td>Posture / turgor</td><td>Turgid, no droop</td><td>Same — turgid, flat, no wilt</td><td>→ steady</td></tr>
   <tr><td>Pests / mold / PM</td><td>Clean</td><td>Clean in all 8 shots (checked for powdery mildew too)</td><td>→ clear</td></tr>
   <tr><td>Watering</td><td>—</td><td>Soil surface drying; 4 days since the 7/2 tea/top-dress</td><td>→ due</td></tr>
 </table>
 
-<h2>5 · Per-region analysis</h2>
+</details>
+
+<details class="report-section" open>
+<summary><h2 id="5-per-region-analysis">5 · Per-region analysis</h2><span class="report-section__chev" aria-hidden="true"></span></summary>
+
 <div class="grid">
   <figure><img src="images/03-bottom-left.png" class="tall" alt="bottom left"><figcaption><b>Bottom-left</b> <span class="pill good">OK</span> — frosty tops, white pistils; a few yellow leaf-tips at the left edge; red petioles present (benign).</figcaption></figure>
   <figure><img src="images/04-top-left.png" class="tall" alt="top left"><figcaption><b>Top-left</b> <span class="pill good">OK</span> — lead cola under the fan stacking pistils; new growth clean deep green.</figcaption></figure>
@@ -132,39 +152,59 @@
 </div>
 <p>Every region reads healthy: deep green through the tops, fattening pistil-dense colas, turgid flat leaves, and no webbing, stippling, powder, or gray fluff in any close-up. The canopy is visibly fuller and the buds bigger than 7/1. The only recurring note is interior-fan yellowing (tips/margins), addressed below.</p>
 
-<h2>6 · Flags</h2>
+</details>
+
+<details class="report-section" open>
+<summary><h2 id="6-flags">6 · Flags</h2><span class="report-section__chev" aria-hidden="true"></span></summary>
+
 <div class="flag ok"><h3>Growth <span class="pill good">progressing</span></h3>Fatter, frostier tops and a fuller canopy than 7/1 — clear five-day flower progression, no stall.</div>
-<div class="flag ok"><h3>Pests / mildew / mold <span class="pill good">clear</span></h3>No stippling, webbing, powdery-mildew coating, or bud-rot in any of the eight shots. Given warm-season mildew risk, I looked specifically for the white flour-like PM patches on leaf surfaces — none present. Keep up underside checks given the 6/9 mite history (<a href="../../knowledge_base/04-pests.md">KB 04</a>, <a href="../../knowledge_base/05-diseases.md">KB 05</a>).</div>
+<div class="flag ok"><h3>Pests / mildew / mold <span class="pill good">clear</span></h3>No stippling, webbing, powdery-mildew coating, or bud-rot in any of the eight shots. Given warm-season mildew risk, I looked specifically for the white flour-like PM patches on leaf surfaces — none present. Keep up underside checks given the 6/9 mite history (<span class="kb-ref" tabindex="0" role="button" aria-label="Knowledge base: 04 · Pests"><span class="kb-ref__icon" aria-hidden="true">📖</span><span class="kb-ref__label">KB 04</span><span class="kb-pop" role="tooltip"><span class="kb-pop__title">04 · Pests</span><span class="kb-pop__body">Most pests are easiest to catch on leaf undersides and in new growth; a jeweler's loupe or USB microscope (60–100x) is essential for the microscopic ones. Early signs: stippling/speckling, curled or twisted new growth, sticky residue, webbing, or tiny moving dots.</span><span class="kb-pop__sections">Covers: Spider mites (most common, most feared) · Broad mites &amp; russet mites (microscopic, often misdiagnosed) · Thrips · Fungus gnats · Aphids · Whiteflies</span><span class="kb-pop__note">GrowBuddy knowledge base · 04-pests.md</span></span></span>, <span class="kb-ref" tabindex="0" role="button" aria-label="Knowledge base: 05 · Diseases (Mold, Rot, Mildew)"><span class="kb-ref__icon" aria-hidden="true">📖</span><span class="kb-ref__label">KB 05</span><span class="kb-pop" role="tooltip"><span class="kb-pop__title">05 · Diseases (Mold, Rot, Mildew)</span><span class="kb-pop__body">Fungal problems are mostly an environment story: humidity, temperature, and airflow. Prevention beats treatment because by the time buds are affected, that material is usually lost.</span><span class="kb-pop__sections">Covers: Bud rot / Botrytis (the dangerous one in flower) · Powdery mildew (PM) · Leaf septoria (yellow leaf spot) — outdoor · Root rot (Pythium) · Prevention (covers all three)</span><span class="kb-pop__note">GrowBuddy knowledge base · 05-diseases.md</span></span></span>).</div>
 <div class="flag ok"><h3>Structure <span class="pill good">good</span></h3>Even canopy through both scrog nets; open lower stems in the side shot keep interior airflow up as the buds fatten.</div>
 <div class="flag warn"><h3>Interior-fan yellowing <span class="pill warn">watch</span></h3>
-  The lower/interior yellowing flagged on 7/1 is now a bit more widespread — <b>yellow tips and margins</b> on some interior fan leaves, clearest on the right-side leaf in the center close-up (boxed below), with a couple of small pale spots. It sits on <b>older, shaded interior</b> leaves, and the actively growing tops + new growth stay deep green.
+  <b>Center canopy, 7/1 → 7/6 (direct comparison):</b> on 7/1 the center frame was mostly uniform green with only a few faint yellow leaf-tips. On 7/6 the same frame shows <b>several</b> mid-canopy fan leaves with yellow tips/margins, plus the margin-yellowed leaf with a couple of pale spots in the close-up (boxed below). So yes — it has measurably progressed in five days, not held steady.
   <img src="images/flag-yellowing.png" alt="Annotated: yellow leaf margins/tips on an interior fan leaf, center close-up">
-  <p style="margin:6px 0 0">Leading read: <b>normal mid-flower fade / senescence</b> — the plant redistributes mobile nutrients (N, then Mg/K) from old fan leaves into swelling buds, and you fed a vermicompost tea + flowering top-dress on 7/2, so it isn't hungry. The documented 6/20–6/22 light-stress tip character is also in the mix. <b>What to watch:</b> if the yellowing <b>climbs into the upper, actively-growing tops</b>, that points to a real mobile-nutrient draw — in living soil the fix is a <b>tea / top-dress</b>, not bottled nutrients or a flush (<a href="../../knowledge_base/07-organic-living-soil.md">KB 07</a>; mobile-nutrient localization, <a href="../../knowledge_base/02-deficiencies.md">KB 02</a>). Not asserting a specific cause from color — see Assumptions.</p>
+  <p style="margin:8px 0 0"><b>Is it "creeping up"?</b> In amount, yes; in altitude, not yet. The yellowing leaves are the large older fans sitting <b>at/just below the net plane</b> — leaves that were the canopy top a couple weeks ago and are now shaded by the colas that stacked above them. The <b>cola tips and the newest lime-green shoots stay green</b>. Because those fans sit right at the surface, it reads as "climbing," but the actively-growing points aren't yellowing. That altitude distinction is the whole call: old-leaf fade from the bottom/interior = expected; yellowing that reaches the <b>new growth at the tops</b> = a real draw to act on (<span class="kb-ref" tabindex="0" role="button" aria-label="Knowledge base: 02 · Nutrient Deficiencies &amp; Toxicities"><span class="kb-ref__icon" aria-hidden="true">📖</span><span class="kb-ref__label">KB 02</span><span class="kb-pop" role="tooltip"><span class="kb-pop__title">02 · Nutrient Deficiencies &amp; Toxicities</span><span class="kb-pop__body">Always run the framework first (pH/watering, then location). Fixes below assume a synthetic/bottled-nutrient grow; for living soil, see 07 (the remedy is amendments/teas, not a bottle).</span><span class="kb-pop__sections">Covers: Mobility cheat sheet · Mobile nutrients · Immobile nutrients · Toxicities &amp; overfeeding · Hard rule</span><span class="kb-pop__note">GrowBuddy knowledge base · 02-deficiencies.md</span></span></span>, mobile-nutrient localization).</p>
+  <p style="margin:8px 0 0"><b>On the 7/2 compost tea — good question, and it cuts both ways.</b> A vermicompost tea is mostly a <b>microbial/biological</b> boost with only mild nutrients, and the flowering top-dress amendments release <b>slowly</b> (broken down by soil life over days-to-weeks, not hours) — so 4 days is too soon for that feed to have reversed a real shortfall, and its presence doesn't rule a deficiency in <b>or</b> out. The more important point: in normal mid-flower fade the plant pulls mobile nutrients out of old fan leaves into the buds <b>regardless of how rich the soil is</b> — a well-fed plant still fades its lowers. So the recent feed is mildly reassuring that the soil isn't starved, but it doesn't settle it; the <b>trajectory and altitude</b> do. It also means chasing this with heavy nitrogen now would be the wrong move — you don't want to push vegetative growth in week 5 of flower (<span class="kb-ref" tabindex="0" role="button" aria-label="Knowledge base: 07 · Organic / Living Soil / No-Till"><span class="kb-ref__icon" aria-hidden="true">📖</span><span class="kb-ref__label">KB 07</span><span class="kb-pop" role="tooltip"><span class="kb-pop__title">07 · Organic / Living Soil / No-Till</span><span class="kb-pop__body">A living-soil grow is a different system from bottled-nutrient growing, and most generic diagnosis advice gives the wrong fix here. If the grow is living soil / no-till, read this before recommending anything.</span><span class="kb-pop__sections">Covers: The core idea · How feeding/correcting works (and what NOT to say) · Diagnosis differences in living soil · Practical no-till setup &amp; routine (real-world basics) · Practical rule for the diagnoser</span><span class="kb-pop__note">GrowBuddy knowledge base · 07-organic-living-soil.md</span></span></span>).</p>
+  <p style="margin:8px 0 0"><b>What to actually do:</b> pull one of the yellowing lower fans and read the <b>pattern</b> up close — uniform pale = nitrogen (benign fade), yellow <b>between green veins</b> = magnesium, <b>scorched margins/tips</b> = potassium. That, plus whether it reaches the new growth over the next week, tells you whether it's fade (do nothing) or a draw worth a stronger tea/top-dress. Not asserting a specific cause from a photo — see Assumptions.</p>
 </div>
-<div class="flag ok"><h3>Red/purple petioles <span class="pill good">benign</span></h3>Present again on several leaves. Treated as <b>stable benign coloration</b> per the framework and the grow-context "known benign" list — the plant is otherwise healthy and vigorous. Not called a deficiency or a strain "genetic fact"; a photo can't distinguish the several possible causes (<a href="../../knowledge_base/01-diagnosis-framework.md">KB 01</a>, <a href="../../knowledge_base/strains/papaya-crush.md">strain file</a>).</div>
+<div class="flag ok"><h3>Red/purple petioles <span class="pill good">benign / stable</span></h3><b>You asked whether it's more purple than last time — no, it looks about the same.</b> Comparing the red leaf-junction/petiole coloration in the 7/1 and 7/6 center and quadrant shots, it's present at roughly the same density in both; I don't see it spreading or deepening. That stability matters: a purple/red flush that <b>increased alongside</b> the yellowing could hint at phosphorus or magnesium, but static coloration on an otherwise vigorous plant is the benign anthocyanin pattern already logged in the grow-context "known benign" list. Not called a deficiency or a strain "genetic fact"; a photo can't distinguish the several possible causes (<span class="kb-ref" tabindex="0" role="button" aria-label="Knowledge base: 01 · Diagnosis Framework"><span class="kb-ref__icon" aria-hidden="true">📖</span><span class="kb-ref__label">KB 01</span><span class="kb-pop" role="tooltip"><span class="kb-pop__title">01 · Diagnosis Framework</span><span class="kb-pop__body">The method for turning &quot;something looks off&quot; into a calibrated diagnosis. Work the steps in order; do not jump to a nutrient name from leaf color alone.</span><span class="kb-pop__sections">Covers: Step 0 — Gather context (decides most cases) · Step 1 — Rule out pH / lockout and watering FIRST · Step 2 — Localize the symptom (mobile vs immobile) · Step 3 — Characterize the pattern · Step 4 — Disambiguate look-alikes · Step 5 — Output: diagnosis, confidence, assumptions, sources</span><span class="kb-pop__note">GrowBuddy knowledge base · 01-diagnosis-framework.md</span></span></span>, <span class="kb-ref" tabindex="0" role="button" aria-label="Knowledge base: Papaya Crush"><span class="kb-ref__icon" aria-hidden="true">📖</span><span class="kb-ref__label">strain file</span><span class="kb-pop" role="tooltip"><span class="kb-pop__title">Papaya Crush</span><span class="kb-pop__body">Breeder: Bloom Seed Co. · Lineage: Papaya × Bolo Runtz · Type: indica-leaning hybrid · THC: ~25%</span><span class="kb-pop__sections">Covers: Grow facts (sourced) · Diagnostic flags (sourced only) · Assumptions &amp; to-verify (NOT established fact) · Grower notes (external report — r/BloomSeedCompany journal `1rncu6s`, retrieved via browser)</span><span class="kb-pop__note">GrowBuddy knowledge base · strains/papaya-crush.md</span></span></span>).</div>
 <div class="flag warn"><h3>Watering <span class="pill warn">due</span></h3>The side shot shows a drying soil/perlite surface, and it's 4 days since the 7/2 tea/top-dress on the ~4-day cycle. Due for a water (bottom-feed per usual).</div>
 
-<h2>7 · Assumptions (what's inferred, not measured)</h2>
+</details>
+
+<details class="report-section" open>
+<summary><h2 id="7-assumptions-what-s-inferred-not-measured">7 · Assumptions (what's inferred, not measured)</h2><span class="report-section__chev" aria-hidden="true"></span></summary>
+
 <ul>
   <li><b>Cola count is a visual estimate</b> (±). Occlusion prevents an exact number; the trend matters more than the figure.</li>
-  <li><b>Interior yellowing = senescence / mid-flower fade</b> is the leading read, not confirmed. The alternative (early mobile-nutrient draw) can't be ruled out from a photo; watching whether it climbs into the tops distinguishes them. Recent 7/2 feeding weighs toward fade.</li>
+  <li><b>Interior yellowing = senescence / mid-flower fade</b> is the leading read, not confirmed — and it <b>has progressed</b> since 7/1 (more mid-canopy fans, not just a couple of tips). The alternative (mobile-nutrient draw) can't be ruled out from a photo; the altitude (does it reach the new growth?) and an up-close read of one leaf's pattern distinguish them. The 7/2 feed is only weak evidence: slow-release living-soil amendments haven't fully kicked in at 4 days, and old-leaf fade happens even in rich soil.</li>
   <li><b>No powdery mildew / mold</b> — none visible, but a photo can't fully rule out early growth on leaf undersides or deep in the canopy; a hands-on underside check is the confirmation.</li>
   <li><b>Bud identity / frost</b> inferred from appearance at photo resolution (12/12 flower per grow context), not measured with a loupe.</li>
   <li><b>Stage day ~33</b> derived from the 6/3 flip date in grow context.</li>
 </ul>
 <p class="sub">Sources: knowledge_base framework (01), deficiencies (02), pests (04), diseases (05), organic/living-soil (07), and the Papaya Crush strain file. Comparison baseline: manual-report 2026-07-01.</p>
 
-<h2>8 · Conclusion</h2>
-<p>On track and improving. At day ~33 this is a healthy, pest-free Papaya Crush moving through mid-flower, clearly ahead of the 7/1 baseline with a fuller canopy, fatter frostier tops, and denser pistils. The single live item is routine: watch the interior-fan yellowing to confirm it stays as old-leaf fade and doesn't climb into the tops. Give it a water — it's due.</p>
+</details>
 
-<h2>9 · Next actions</h2>
+<details class="report-section" open>
+<summary><h2 id="8-conclusion">8 · Conclusion</h2><span class="report-section__chev" aria-hidden="true"></span></summary>
+
+<p>On track and improving. At day ~33 this is a healthy, pest-free Papaya Crush moving through mid-flower, clearly ahead of the 7/1 baseline with a fuller canopy, fatter frostier tops, and denser pistils. The one live item needs an honest watch: the interior-fan yellowing has genuinely progressed since 7/1, though it's still on the older/shaded fans with green tops, which keeps it on the fade side of the line for now. Read a lower leaf up close and track whether it reaches the new growth. Give it a water — it's due.</p>
+
+</details>
+
+<details class="report-section" open>
+<summary><h2 id="9-next-actions">9 · Next actions</h2><span class="report-section__chev" aria-hidden="true"></span></summary>
+
 <ul class="next">
   <li><b>Water soon</b> — 4 days since the 7/2 tea/top-dress and the surface is drying; bottom-feed as usual.</li>
-  <li><b>Watch the interior yellowing</b> — if it stays low/interior it's fade; if it climbs into upper growth, top-dress/tea (living-soil, not bottled N).</li>
+  <li><b>Read one yellowing lower fan up close</b> — uniform pale = N (benign fade), interveinal = Mg, scorched margins = K. Then watch altitude: if it reaches the new growth at the tops, treat as a draw (stronger tea/top-dress, living-soil — not bottled N); if it stays on the older/shaded fans, it's fade, do nothing.</li>
   <li><b>Start trichome loupe checks</b> — day ~33 is still early, but begin tracking heads toward the usual ~wk7–8 window.</li>
   <li><b>Underside pest spot-checks</b> — continue given the 6/9 mite history; also glance for early powdery mildew given the season.</li>
   <li><b>Log the cola estimate</b> (~28–40) so the next report shows the trend.</li>
 </ul>
+
+</details>
 
 <footer>
   Generated July 6, 2026 · Papaya Crush · 2×2 AC Infinity tent · for personal grow log.
@@ -181,5 +221,6 @@
   });
   lb.addEventListener('click',function(){lb.style.display='none';lbi.src='';});
 </script>
+<script src="../kb-popover.js" defer></script>
 </body>
 </html>
