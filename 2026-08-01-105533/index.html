@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Grow Report — Papaya Crush — August 1, 2026</title>
+<style>
+  :root{
+    --bg:#10140f; --card:#181d15; --ink:#e8efe2; --mut:#9bb08c;
+    --line:#2c3626; --accent:#7cc24a; --warn:#e0b341; --good:#7cc24a;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+  .wrap{max-width:1000px;margin:0 auto;padding:32px 20px 80px}
+  header{border-bottom:1px solid var(--line);padding-bottom:20px;margin-bottom:8px}
+  h1{font-size:28px;margin:0 0 6px}
+  h2{font-size:21px;margin:36px 0 12px;color:var(--accent);
+    border-left:3px solid var(--accent);padding-left:10px}
+  h3{font-size:17px;margin:22px 0 6px}
+  .sub{color:var(--mut);font-size:15px}
+  .meta{display:flex;flex-wrap:wrap;gap:8px 24px;margin-top:14px;font-size:14px;color:var(--mut)}
+  .meta b{color:var(--ink);font-weight:600}
+  .verdict{background:var(--card);border:1px solid var(--line);border-radius:12px;
+    padding:18px 20px;margin:20px 0}
+  .verdict .big{font-size:18px;font-weight:600}
+  .pill{display:inline-block;font-size:12px;font-weight:700;letter-spacing:.04em;
+    text-transform:uppercase;padding:3px 9px;border-radius:999px;vertical-align:middle}
+  .pill.good{background:rgba(124,194,74,.16);color:var(--good)}
+  .pill.warn{background:rgba(224,179,65,.16);color:var(--warn)}
+  p{margin:10px 0}
+  ul{margin:10px 0;padding-left:22px}
+  li{margin:6px 0}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:14px;margin:16px 0}
+  figure{margin:0;background:var(--card);border:1px solid var(--line);border-radius:10px;overflow:hidden}
+  figure img{display:block;width:100%;height:200px;object-fit:cover;cursor:zoom-in}
+  figure img.tall{height:260px}
+  figcaption{padding:8px 12px;font-size:13px;color:var(--mut)}
+  figcaption b{color:var(--ink)}
+  .flag{background:var(--card);border:1px solid var(--line);border-left:3px solid var(--warn);
+    border-radius:8px;padding:12px 16px;margin:12px 0}
+  .flag.ok{border-left-color:var(--good)}
+  .flag h3{margin:0 0 4px}
+  .flag img{display:block;width:100%;max-width:520px;border-radius:8px;margin:10px 0 2px;cursor:zoom-in}
+  table{width:100%;border-collapse:collapse;margin:14px 0;font-size:14.5px}
+  th,td{text-align:left;padding:9px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+  th{color:var(--mut);font-weight:600}
+  .next li{margin:9px 0}
+  .next b{color:var(--accent)}
+  .trend{color:var(--good);font-weight:700}
+  .trend.flat{color:var(--mut)}
+  .trend.new{color:var(--warn)}
+  .count{display:flex;gap:20px;flex-wrap:wrap;align-items:baseline;background:var(--card);
+    border:1px solid var(--line);border-radius:10px;padding:16px 20px;margin:14px 0}
+  .count .num{font-size:34px;font-weight:700;color:var(--accent);line-height:1}
+  details{background:var(--card);border:1px solid var(--line);border-radius:10px;
+    padding:14px 18px;margin:14px 0}
+  details summary{cursor:pointer;font-weight:600;color:var(--accent);outline:none}
+  details[open] summary{margin-bottom:10px}
+  details .prompt{white-space:pre-wrap;font:13.5px/1.55 ui-monospace,SFMono-Regular,Menlo,monospace;
+    color:var(--mut);background:#0d110c;border:1px solid var(--line);border-radius:8px;padding:12px 14px}
+  .stenote{background:var(--card);border:1px solid var(--line);border-left:3px solid var(--accent);
+    border-radius:8px;padding:12px 16px;margin:16px 0;font-size:14.5px;color:var(--mut)}
+  .stenote b{color:var(--ink)}
+  footer{margin-top:48px;border-top:1px solid var(--line);padding-top:16px;
+    font-size:13px;color:var(--mut)}
+  a{color:var(--accent)}
+  :root{--foreground:var(--ink);--muted-foreground:var(--mut);--border:var(--line);--radius:10px}
+</style>
+<link rel="stylesheet" href="../kb-popover.css">
+<link rel="stylesheet" href="../lightbox.css">
+</head>
+<body>
+<div class="wrap">
+
+<a href="../index.html" style="display:inline-block;margin-bottom:10px;color:var(--mut);text-decoration:none;font-size:14px">&larr; All reports</a>
+
+<header>
+  <h1>Grow Report — Papaya Crush</h1>
+  <div class="sub">Manual multi-photo check-in · Saturday, August 1, 2026 · compared against 7/19 · written in Simplified Technical English</div>
+  <div class="meta">
+    <span><b>Strain:</b> Papaya Crush (Papaya × Bolo Runtz)</span>
+    <span><b>Stage:</b> Flower, day ~59 (flipped 6/3)</span>
+    <span><b>Age:</b> ~13.5 weeks from germination (4/28)</span>
+    <span><b>Tent:</b> 2×2 AC Infinity · SF-2000 Pro</span>
+    <span><b>Medium:</b> Living soil, no-till</span>
+    <span><b>Breeder flower time:</b> ~56 days — the plant is 3 days past it</span>
+  </div>
+</header>
+
+<div class="stenote">
+  <b>About the language of this report.</b> You asked for Simplified Technical English (ASD-STE100). This report obeys the STE writing rules: short sentences, the active voice, one instruction per sentence, simple tenses, and no complex verb forms. Grow words such as <i>pistil</i>, <i>trichome</i>, <i>cola</i>, <i>anthocyanin</i>, <i>botrytis</i> and <i>senescence</i> are Technical Names. STE permits Technical Names that your industry uses. This report is <b>not</b> a certified STE document. No STE checker software examined it.
+</div>
+
+<div class="verdict">
+  <span class="pill warn">Ripe · decision blocked</span>
+  <p class="big">The plant is healthy. Thirteen days went by since 7/19 (day ~46 to day ~59). In that time the tops became much more ripe. Most tops now show orange and brown pistils. The pistils curled back into the buds. The trichome frost is heavy on the sugar leaves. No photo shows a pest, mold, powdery mildew or bud rot. <b>But you cannot make the harvest decision from these photos.</b> The plant is now 3 days past the breeder flower time of ~56 days. You still have no trichome data. Three manual reports in a row (7/13, 7/19, 8/1) record the same gap. Pistil color tells you the plant is late. Only a loupe tells you when to cut. Two new items also appeared this round. The top colas grow pale spires with new white pistils. The sugar leaves on the top colas turned purple. Read the flags below for both. One coverage problem is important: this set has no cross-section photo. The 7/19 set had three. Bud rot starts in the middle of a dense bud. At day ~59 that risk is at its highest, and you did not photograph that area.</p>
+</div>
+
+<details class="report-section" open>
+<summary><h2 id="1-what-you-asked-for">1 · What you asked for</h2><span class="report-section__chev" aria-hidden="true"></span></summary>
+
+
+<p><b>Summary.</b> You sent nine photos through Telegram: one top-down canopy, four canopy quadrants (bottom-left, top-left, top-right, bottom-right), one center shot, one side profile, and two close-up shots of top colas. You asked for a manual report. You asked for the report text in Simplified Technical English. You asked for a comparison against the last manual report.</p>
+
+<details>
+  <summary>Show the original messages</summary>
+  <div class="prompt">"Check out the grow buddy folder. I want to do a manual report... I want you to generate the port using the simplify technical English... I'm going to send the pictures over in just a minute via telegram. When I say I'm done with the pictures start with a report generation... You'll need to compare it with the previous manual report"
+
+Photo labels, in order: "Canopy" / "Bottom left" / "Top left" / "Top right" / "Bottom right?" / "Center" / "Sid shot" / "Up close top right" / "Up close top left"
+
+"Okay I'm done sending pictures start on the report. Ping me when you're done... We want to commit and push up the report. Let me know when it's ready to view via the grow daily repo"</div>
+</details>
+
+<p><b>Note on the photo set.</b> The 7/19 set had 9 photos and included 3 cross-section photos. This set also has 9 photos. It replaces the 3 cross-sections with 1 center shot and 2 cola close-ups. The close-ups are good. They give the best trichome view of any manual report. But the loss of the cross-sections removes your only view into the canopy interior. See flag 3.</p>
+
+</details>
+
+<details class="report-section" open>
+<summary><h2 id="2-snapshot">2 · Snapshot</h2><span class="report-section__chev" aria-hidden="true"></span></summary>
+
+
+<div class="grid">
+  <figure><a href="images/01-canopy-topdown.jpg"><img src="images/01-canopy-topdown.jpg" alt="canopy top-down"></a><figcaption><b>Canopy (top-down)</b> <span class="pill good">OK</span> — many frosty tops across both scrog planes; the soil surface is visible and looks dry</figcaption></figure>
+  <figure><a href="images/09-closeup-top-left.jpg"><img src="images/09-closeup-top-left.jpg" alt="close-up of the top-left cola"></a><figcaption><b>Close-up, top-left cola</b> <span class="pill warn">Watch</span> — heavy trichome frost; orange pistils; purple sugar leaves; a pale spire at the top</figcaption></figure>
+  <figure><a href="images/08-closeup-top-right.jpg"><img src="images/08-closeup-top-right.jpg" alt="close-up of the top-right cola"></a><figcaption><b>Close-up, top-right cola</b> <span class="pill warn">Watch</span> — the same pale spire growth with new white pistils above ripe orange pistils</figcaption></figure>
+  <figure><a href="images/07-side-profile.jpg"><img src="images/07-side-profile.jpg" alt="side profile"></a><figcaption><b>Side profile</b> <span class="pill good">OK</span> — the flower mass stays in the top two planes; the understory is open and bare</figcaption></figure>
+</div>
+
+</details>
+
+<details class="report-section" open>
+<summary><h2 id="3-side-by-side">3 · Side by side — 7/19 against 8/1</h2><span class="report-section__chev" aria-hidden="true"></span></summary>
+
+
+<p>Each row compares the same signal in the two manual reports. The 7/19 report covers day ~46. This report covers day ~59.</p>
+
+<table>
+<tr><th>Signal</th><th>7/19 (day ~46)</th><th>8/1 (day ~59)</th><th>Trend</th></tr>
+<tr><td><b>Pistil color</b></td><td>Cream and tan on most tops; some amber</td><td>Orange and brown on most tops; the pistils curled back into the buds</td><td><span class="trend">↑ more ripe</span></td></tr>
+<tr><td><b>Trichome frost</b></td><td>Heavy</td><td>Heavy; the sugar leaves show a gray sheen in both close-ups</td><td><span class="trend">↑</span></td></tr>
+<tr><td><b>Bud size</b></td><td>Fattening; calyx swell</td><td>Larger; the calyxes stacked and the tops are more solid</td><td><span class="trend">↑</span></td></tr>
+<tr><td><b>Purple color on sugar leaves</b></td><td>None in any frame</td><td>Present on the top colas; magenta on the sugar leaves and bract edges</td><td><span class="trend new">NEW</span></td></tr>
+<tr><td><b>Spire growth at the tops</b></td><td>None seen</td><td>Present in both cola close-ups; pale growth with new white pistils</td><td><span class="trend new">NEW</span></td></tr>
+<tr><td><b>Lower and interior leaf yellowing</b></td><td>Moderate, ~4 of 6 frames</td><td>Moderate; the same interior and lower leaves; no climb into the tops</td><td><span class="trend flat">→ flat</span></td></tr>
+<tr><td><b>Pests</b></td><td>None in 9 frames</td><td>None in 9 frames, and none at macro magnification</td><td><span class="trend flat">→ none</span></td></tr>
+<tr><td><b>Mold, mildew, bud rot</b></td><td>None; 3 cross-sections showed the bud bases</td><td>None in the visible frames; <b>the canopy interior is not imaged</b></td><td><span class="trend new">coverage ↓</span></td></tr>
+<tr><td><b>Understory</b></td><td>Bare and larfy; open</td><td>Bare and larfy; open; no change</td><td><span class="trend flat">→ flat</span></td></tr>
+<tr><td><b>Canopy closure</b></td><td>Fully closed</td><td>Not comparable — the camera framing changed (see Assumptions)</td><td><span class="trend flat">n/a</span></td></tr>
+<tr><td><b>Soil surface</b></td><td>Dry on top; ~day 3 of the ~4-day cycle</td><td>Dry on top; the last logged water is 7/16 (16 days)</td><td><span class="trend new">log gap</span></td></tr>
+<tr><td><b>Trichome loupe data</b></td><td>None</td><td>None</td><td><span class="trend new">still missing</span></td></tr>
+<tr><td><b>Cola / bud site count</b></td><td>~32–46</td><td>~32–46</td><td><span class="trend flat">→ flat</span></td></tr>
+</table>
+
+</details>
+
+<details class="report-section" open>
+<summary><h2 id="4-cola-count">4 · Cola and bud site count</h2><span class="report-section__chev" aria-hidden="true"></span></summary>
+
+
+<div class="count">
+  <div><div class="num">~15–20</div><div class="sub">large tops in the top-down and quadrant frames</div></div>
+  <div><div class="num">~32–46</div><div class="sub">all bud sites, with the understory popcorn included</div></div>
+</div>
+
+<p><b>Method.</b> I counted the distinct flowering tops in the top-down canopy photo. I used the scrog squares as a reference. I then checked the count against the four quadrant photos and the center photo. Overlap and occlusion make an exact count impossible from a photo. Read the trend, not the number.</p>
+
+<p><b>Result.</b> The count is flat against 7/19. This is the correct result for day ~59. The plant stopped making new bud sites. It now fills the sites it has.</p>
+
+</details>
+
+<details class="report-section" open>
+<summary><h2 id="5-yield">5 · Yield estimate</h2><span class="report-section__chev" aria-hidden="true"></span></summary>
+
+
+<div class="count">
+  <div><div class="num">~100–150 g</div><div class="sub">dried flower, low confidence</div></div>
+  <div><div class="num">~4.2 oz</div><div class="sub">central estimate (~120 g)</div></div>
+</div>
+
+<p>I used the same three methods as the 7/19 report. Each method gives a range. I then triangulated the three ranges.</p>
+
+<table>
+<tr><th>Method</th><th>Input</th><th>Range</th></tr>
+<tr><td><b>Grams per watt</b></td><td>SF-2000 Pro, ~200 W actual draw; 0.5–0.75 g/W for a good home grow with a bare understory</td><td>~100–150 g</td></tr>
+<tr><td><b>Canopy area</b></td><td>2 × 2 ft = 4 ft²; ~0.9–1.3 oz per ft² for a scrog that fills the top plane only</td><td>~100–145 g</td></tr>
+<tr><td><b>Cola count</b></td><td>~15–20 large tops at ~5–7 g each, plus ~15–25 g of larf</td><td>~90–165 g</td></tr>
+</table>
+
+<p><b>Change against 7/19.</b> The 7/19 estimate was ~90–140 g, with a central figure of ~110 g. This estimate moves up by ~10 g. The buds became visibly larger in 13 days. The move is small because the plant is now past the main bulking phase. Do not expect much more mass.</p>
+
+<p><b>What limits the yield.</b> The side profile shows the same bare understory as 7/19. The flower mass sits in the top two scrog planes only. The lower branches carry small larf. This caps the upside. A bare understory is the normal result of a scrog, so this is not a fault.</p>
+
+<p><b>Confidence.</b> Low. All three methods are heuristics, not measurements. Dried weight also depends on the dry and the cure. Weigh the wet flower at the chop. Weigh it again after the dry. That gives you a real number for the next grow.</p>
+
+</details>
+
+<details class="report-section" open>
+<summary><h2 id="6-regions">6 · Region by region</h2><span class="report-section__chev" aria-hidden="true"></span></summary>
+
+
+<h3>Canopy, top-down <span class="pill good">OK</span></h3>
+<figure style="max-width:520px"><a href="images/01-canopy-topdown.jpg"><img class="tall" src="images/01-canopy-topdown.jpg" alt="canopy top-down"></a><figcaption><b>Canopy (top-down)</b> — many frosty tops; the soil surface is visible at the front of the pot</figcaption></figure>
+<ul>
+  <li>Many flowering tops fill both scrog planes. The tops are frosty and pale-green to tan.</li>
+  <li>The fan leaves stay deep green. No leaf shows tacoing, curl or bleaching.</li>
+  <li>The soil surface and the perlite are visible. The surface looks dry. See flag 5.</li>
+  <li>This photo is wider than the 7/19 photo. It shows the tent floor. Do not compare the canopy density between the two.</li>
+</ul>
+
+<h3>Bottom-left <span class="pill good">OK</span></h3>
+<figure style="max-width:520px"><a href="images/02-bottom-left.jpg"><img class="tall" src="images/02-bottom-left.jpg" alt="bottom-left quadrant"></a><figcaption><b>Bottom-left</b> — dense tops through the net; deep green fan leaves; red petioles at the leaf junctions</figcaption></figure>
+<ul>
+  <li>The tops in this quadrant are dense and well formed. The pistils are orange and brown.</li>
+  <li>The fan leaves are deep green. The leaf edges are clean.</li>
+  <li>Red and pink color shows at the leaf junctions. The grow context records this as benign. Do not flag it.</li>
+  <li>No pest damage, no webbing and no stippling.</li>
+</ul>
+
+<h3>Top-left <span class="pill warn">Watch</span></h3>
+<figure style="max-width:520px"><a href="images/03-top-left.jpg"><img class="tall" src="images/03-top-left.jpg" alt="top-left quadrant"></a><figcaption><b>Top-left</b> — the main cola shows purple sugar leaves; the rest of the quadrant stays green</figcaption></figure>
+<ul>
+  <li>The main cola in this quadrant carries clear purple and magenta color on the sugar leaves.</li>
+  <li>The 7/19 top-left photo shows no purple color at all. This is new. See flag 4.</li>
+  <li>The bud below the purple leaves is dense. The pistils are mostly orange.</li>
+  <li>The fan leaves in the lower half of the frame stay green. A few leaves show yellow tips.</li>
+</ul>
+
+<h3>Top-right <span class="pill good">OK</span></h3>
+<figure style="max-width:520px"><a href="images/04-top-right.jpg"><img class="tall" src="images/04-top-right.jpg" alt="top-right quadrant"></a><figcaption><b>Top-right</b> — one tall top above the net; many smaller tops below; a light purple tint on some sugar leaves</figcaption></figure>
+<ul>
+  <li>One top stands above the net. It is dense and it carries orange pistils.</li>
+  <li>Many smaller tops fill the space below the net.</li>
+  <li>Some sugar leaves show a light purple tint. This matches flag 4.</li>
+  <li>The fan leaves are green. Some leaf tips are dry and tan. This is old tip burn, not a new problem.</li>
+</ul>
+
+<h3>Bottom-right <span class="pill good">OK</span></h3>
+<figure style="max-width:520px"><a href="images/05-bottom-right.jpg"><img class="tall" src="images/05-bottom-right.jpg" alt="bottom-right quadrant"></a><figcaption><b>Bottom-right</b> — a row of medium tops; green fan leaves; the soil surface is visible at the left</figcaption></figure>
+<ul>
+  <li>This quadrant holds a row of medium tops. They are smaller than the top-left and top-right colas.</li>
+  <li>The pistils are orange on most of these tops.</li>
+  <li>The fan leaves are green and flat. No curl and no droop.</li>
+  <li>The soil surface at the left of the frame looks dry.</li>
+</ul>
+
+<h3>Center <span class="pill good">OK with a note</span></h3>
+<figure style="max-width:520px"><a href="images/06-center.jpg"><img class="tall" src="images/06-center.jpg" alt="center of the canopy"></a><figcaption><b>Center</b> — dense tops; several yellow interior leaves below the net line</figcaption></figure>
+<ul>
+  <li>The center of the canopy is full. The tops are dense and frosty.</li>
+  <li>Several interior fan leaves are yellow. They sit low and in shade.</li>
+  <li>The yellow leaves match the pattern of the last three reports. They do not climb into the tops. See flag 6.</li>
+  <li>No mold and no rot show on the visible bud surfaces.</li>
+</ul>
+
+<h3>Side profile <span class="pill good">OK</span></h3>
+<figure style="max-width:520px"><a href="images/07-side-profile.jpg"><img class="tall" src="images/07-side-profile.jpg" alt="side profile"></a><figcaption><b>Side profile</b> — two scrog planes; the flower mass is in the top planes; the understory is bare</figcaption></figure>
+<ul>
+  <li>The structure did not change since 7/19. The two scrog nets hold the canopy flat.</li>
+  <li>The flower mass sits in the top two planes. The understory is open and bare.</li>
+  <li>The main stem and the lower branches are thick and green. The plant supports the load.</li>
+  <li>The soil surface is dry on top. The perlite is pale.</li>
+</ul>
+
+<h3>Close-up, top-right cola <span class="pill warn">Watch</span></h3>
+<figure style="max-width:520px"><a href="images/08-closeup-top-right.jpg"><img class="tall" src="images/08-closeup-top-right.jpg" alt="close-up of the top-right cola"></a><figcaption><b>Close-up, top-right cola</b> — a pale spire with new white pistils sits above the ripe orange bud</figcaption></figure>
+<ul>
+  <li>The main bud shows orange, curled pistils. This part of the bud is ripe.</li>
+  <li>Above that bud, a pale spire grows. It carries new white pistils and pale green bracts.</li>
+  <li>The sugar leaves carry heavy trichome frost.</li>
+  <li>No gray fuzz, no brown mush and no dark lesion shows on this bud.</li>
+</ul>
+
+<h3>Close-up, top-left cola <span class="pill warn">Watch</span></h3>
+<figure style="max-width:520px"><a href="images/09-closeup-top-left.jpg"><img class="tall" src="images/09-closeup-top-left.jpg" alt="close-up of the top-left cola"></a><figcaption><b>Close-up, top-left cola</b> — the best trichome view in the set; purple sugar leaves; a pale spire at the crown</figcaption></figure>
+<ul>
+  <li>This is the sharpest photo in the set. The trichome heads are visible on the sugar leaves.</li>
+  <li>The frost is heavy. The sugar leaves look gray-white from the trichome density.</li>
+  <li>The sugar leaves below the bud are purple and magenta.</li>
+  <li>A pale spire with new white pistils sits at the crown, as on the top-right cola.</li>
+  <li><b>You cannot score trichome color from this photo.</b> A phone camera under a grow light cannot show clear against cloudy. You need 60–100x magnification. See flag 1.</li>
+</ul>
+
+</details>
+
+<details class="report-section" open>
+<summary><h2 id="7-flags">7 · Flags and watch items</h2><span class="report-section__chev" aria-hidden="true"></span></summary>
+
+
+<div class="flag">
+  <h3>1 · No trichome data, and the plant is past the breeder flower time <span class="pill warn">Action</span></h3>
+  <p>The breeder gives a flower time of ~56 days for Papaya Crush. Today is day ~59. The plant is 3 days past that figure. The pistils tell you the plant is late. They do not tell you when to cut.</p>
+  <p>The knowledge base is clear on this point. Inspect the trichomes with a loupe or a USB scope at 60–100x. Look at the calyxes, not at the sugar leaf tips. Below ~30x you cannot tell clear from cloudy. Clear means too early. Cloudy means peak THC. Amber means the THC changes to CBN and gives a sedative effect. A common target is ~70–90% cloudy with ~10–30% amber.</p>
+  <p><b>This gap is now 3 reports old.</b> The 7/13, 7/19 and 8/1 reports all record it. On 7/19 the report inferred "~1 week to harvest" from pistil color. That week passed 6 days ago. You cannot make the harvest decision from photographs. Get a loupe.</p>
+  <p>Source: <span class="kb-ref" tabindex="0" role="button" aria-label="Knowledge base: 06 · Grow Cycle — What's Normal When"><span class="kb-ref__icon" aria-hidden="true">📖</span><span class="kb-ref__label">KB 06 · Grow cycle — harvest timing</span><span class="kb-pop" role="tooltip"><span class="kb-pop__title">06 · Grow Cycle — What's Normal When</span><span class="kb-pop__body">Knowing the stage prevents false alarms (e.g., late-flower leaf fade is normal, not a deficiency — see 16 · Senescence) and sets expectations. Timelines are typical photoperiod ranges; genetics vary.</span><span class="kb-pop__sections">Covers: Stages · Photoperiod vs Autoflower (critical distinction) · Whole-plant &amp; structural issues (not a leaf symptom) · Harvest timing (trichomes)</span><span class="kb-pop__note">GrowBuddy knowledge base · 06-grow-cycle.md</span></span></span>; <span class="kb-ref" tabindex="0" role="button" aria-label="Knowledge base: Papaya Crush"><span class="kb-ref__icon" aria-hidden="true">📖</span><span class="kb-ref__label">strain file — Papaya Crush</span><span class="kb-pop" role="tooltip"><span class="kb-pop__title">Papaya Crush</span><span class="kb-pop__body">Breeder: Bloom Seed Co. · Lineage: Papaya × Bolo Runtz · Type: indica-leaning hybrid · THC: ~25%</span><span class="kb-pop__sections">Covers: Grow facts (sourced) · Diagnostic flags (sourced only) · Assumptions &amp; to-verify (NOT established fact) · Grower notes (external report — r/BloomSeedCompany journal `1rncu6s`, retrieved via browser)</span><span class="kb-pop__note">GrowBuddy knowledge base · strains/papaya-crush.md</span></span></span>.</p>
+</div>
+
+<div class="flag">
+  <h3>2 · Pale spire growth at the top colas <span class="pill warn">New</span></h3>
+  <img src="images/flag-foxtail.png" alt="annotated: pale spire growth with new white pistils at the top-right cola">
+  <p>Both cola close-ups show the same thing. A pale spire of new bracts grows out of the top of a ripe bud. The spire carries fresh white pistils. The bud below it carries orange, curled pistils. The knowledge base calls this pattern foxtailing.</p>
+  <p>The knowledge base splits foxtailing into two causes. <b>Stress foxtail</b> appears only at the tops nearest the light. It looks irregular. The new growth is pale or bleached. It comes with heat or light stress. The triggers are a canopy temperature above ~85–86 °F, or light that is too close or too strong. <b>Genetic foxtail</b> appears evenly across many bud sites. The plant shows no other stress sign. It is benign.</p>
+  <p><b>This case matches parts of both.</b> It matches stress foxtail on two points: it appears at the top colas nearest the light, and the new growth is pale. It matches genetic foxtail on three points: no leaf shows tacoing, no leaf shows bleaching, and the canopy stays deep green. There is a third possible cause the knowledge base does not cover: a late pistil flush is common when a plant runs past its finish date, and this plant is past its finish date.</p>
+  <p><b>I cannot decide between the three.</b> One measurement decides it. <b>Measure the canopy temperature.</b> No temperature reading exists anywhere in <code>grow_context.md</code> — not one, for the whole grow. If the canopy runs below ~85 °F, stress foxtail is unlikely and you can ignore this. Also measure the PPFD at the two top colas. The last reading was just below 800 on 7/13.</p>
+  <p>Source: <span class="kb-ref" tabindex="0" role="button" aria-label="Knowledge base: 03 · Environmental Stress &amp; Watering"><span class="kb-ref__icon" aria-hidden="true">📖</span><span class="kb-ref__label">KB 03 · Environmental — foxtailing</span><span class="kb-pop" role="tooltip"><span class="kb-pop__title">03 · Environmental Stress &amp; Watering</span><span class="kb-pop__body">These cause more &quot;deficiency&quot; misdiagnoses than actual deficiencies. Check here early.</span><span class="kb-pop__sections">Covers: pH &amp; nutrient lockout · Nutrient burn vs light burn vs heat (the big three look-alikes) · Light &amp; heat · Temperature / humidity / VPD by stage · Watering: over vs under vs heat droop · Wind burn</span><span class="kb-pop__note">GrowBuddy knowledge base · 03-environmental-and-watering.md</span></span></span>; <span class="kb-ref" tabindex="0" role="button" aria-label="Knowledge base: 10 · Symptom Index (reverse lookup)"><span class="kb-ref__icon" aria-hidden="true">📖</span><span class="kb-ref__label">KB 10 · Symptom index</span><span class="kb-pop" role="tooltip"><span class="kb-pop__title">10 · Symptom Index (reverse lookup)</span><span class="kb-pop__body">Start here when you have a symptom and want candidates fast. Find the symptom, read the ranked causes, then open the linked file and confirm with the framework. Causes are listed most-likely-first for a typical grow.</span><span class="kb-pop__sections">Covers: Yellowing · Tips &amp; edges · Spots &amp; color · Whole-plant / structural (not a leaf color) · Shape, posture, growth · Holes / eaten tissue (chewing damage — mostly outdoor)</span><span class="kb-pop__note">GrowBuddy knowledge base · 10-symptom-index.md</span></span></span>.</p>
+</div>
+
+<div class="flag">
+  <h3>3 · The canopy interior is not imaged <span class="pill warn">Coverage gap</span></h3>
+  <img src="images/flag-no-crosssection.png" alt="annotated: the region of the canopy interior that this photo set does not show">
+  <p>The 7/19 set had three cross-section photos. Those photos showed the bud bases inside the canopy. This set has none. The red box marks the area that no photo in this set shows.</p>
+  <p>This matters more now than it did on 7/19. Bud rot starts inside a dense bud, at the base, where the air does not move. The bud must be dense before it can start. These buds are at their densest today. The plant is at day ~59 and past its finish date. This is the peak risk point of the whole grow, and it is the one point you did not photograph.</p>
+  <p><b>Nothing here says the plant has bud rot.</b> Every surface in all nine photos is clean. But "clean on the outside" is a weak statement about botrytis, because botrytis is an inside problem.</p>
+  <p>Do this before you decide to harvest. Open the canopy with your hand. Look at the base of the four or five largest colas. Look for gray fuzz, for a brown or mushy spot, and for a single dry leaf that pulls out of the bud. Squeeze a top gently — a rotten core feels soft. If you find rot, cut that cola out at once and check the ones next to it.</p>
+  <p>Source: <span class="kb-ref" tabindex="0" role="button" aria-label="Knowledge base: 05 · Diseases (Mold, Rot, Mildew)"><span class="kb-ref__icon" aria-hidden="true">📖</span><span class="kb-ref__label">KB 05 · Diseases</span><span class="kb-pop" role="tooltip"><span class="kb-pop__title">05 · Diseases (Mold, Rot, Mildew)</span><span class="kb-pop__body">Fungal problems are mostly an environment story: humidity, temperature, and airflow. Prevention beats treatment because by the time buds are affected, that material is usually lost.</span><span class="kb-pop__sections">Covers: Bud rot / Botrytis (the dangerous one in flower) · Powdery mildew (PM) · Leaf septoria (yellow leaf spot) — outdoor · Root rot (Pythium) · Prevention (covers all three)</span><span class="kb-pop__note">GrowBuddy knowledge base · 05-diseases.md</span></span></span>.</p>
+</div>
+
+<div class="flag ok">
+  <h3>4 · Purple color on the sugar leaves <span class="pill good">New, benign read</span></h3>
+  <img src="images/flag-purpling.png" alt="annotated: purple anthocyanin color on the sugar leaves of the top-left cola">
+  <p>The sugar leaves on the top colas turned purple and magenta. The 7/19 photos show no purple color. This is new in 13 days.</p>
+  <p>This is anthocyanin. The knowledge base treats purple on whole leaf blades as benign in most cases. The two normal causes are genetics and cool night temperatures. Late flower is the usual time for it. The framework says one rule clearly: <b>never name a cause from color alone.</b> A phosphorus deficiency can also purple a plant, but it comes with dull or spotted lower leaves and a growth stall. This plant shows neither.</p>
+  <p>The strain file adds one point. The <i>Papaya</i> parent shows "subtle violet hues" under cooler nights, per Strainpedia. That is documented for the parent. It is <b>not</b> confirmed for Papaya Crush. One grower report on this strain said "no purple stems", but that is one data point.</p>
+  <p><b>Read this as normal late-flower color.</b> Do not treat it. One thing is worth a thought: if cool nights caused it, your night temperature changed in the last 13 days. You have no temperature log, so you cannot check this. That is the same missing measurement as flag 2.</p>
+  <p>Source: <span class="kb-ref" tabindex="0" role="button" aria-label="Knowledge base: 01 · Diagnosis Framework"><span class="kb-ref__icon" aria-hidden="true">📖</span><span class="kb-ref__label">KB 01 · Diagnosis framework</span><span class="kb-pop" role="tooltip"><span class="kb-pop__title">01 · Diagnosis Framework</span><span class="kb-pop__body">The method for turning &quot;something looks off&quot; into a calibrated diagnosis. Work the steps in order; do not jump to a nutrient name from leaf color alone.</span><span class="kb-pop__sections">Covers: Step 0 — Gather context (decides most cases) · Step 1 — Rule out pH / lockout and watering FIRST · Step 2 — Localize the symptom (mobile vs immobile) · Step 3 — Characterize the pattern · Step 4 — Disambiguate look-alikes · Step 5 — Output: diagnosis, confidence, assumptions, sources</span><span class="kb-pop__note">GrowBuddy knowledge base · 01-diagnosis-framework.md</span></span></span>; <span class="kb-ref" tabindex="0" role="button" aria-label="Knowledge base: 03 · Environmental Stress &amp; Watering"><span class="kb-ref__icon" aria-hidden="true">📖</span><span class="kb-ref__label">KB 03 · Environmental</span><span class="kb-pop" role="tooltip"><span class="kb-pop__title">03 · Environmental Stress &amp; Watering</span><span class="kb-pop__body">These cause more &quot;deficiency&quot; misdiagnoses than actual deficiencies. Check here early.</span><span class="kb-pop__sections">Covers: pH &amp; nutrient lockout · Nutrient burn vs light burn vs heat (the big three look-alikes) · Light &amp; heat · Temperature / humidity / VPD by stage · Watering: over vs under vs heat droop · Wind burn</span><span class="kb-pop__note">GrowBuddy knowledge base · 03-environmental-and-watering.md</span></span></span>; <span class="kb-ref" tabindex="0" role="button" aria-label="Knowledge base: Papaya Crush"><span class="kb-ref__icon" aria-hidden="true">📖</span><span class="kb-ref__label">strain file</span><span class="kb-pop" role="tooltip"><span class="kb-pop__title">Papaya Crush</span><span class="kb-pop__body">Breeder: Bloom Seed Co. · Lineage: Papaya × Bolo Runtz · Type: indica-leaning hybrid · THC: ~25%</span><span class="kb-pop__sections">Covers: Grow facts (sourced) · Diagnostic flags (sourced only) · Assumptions &amp; to-verify (NOT established fact) · Grower notes (external report — r/BloomSeedCompany journal `1rncu6s`, retrieved via browser)</span><span class="kb-pop__note">GrowBuddy knowledge base · strains/papaya-crush.md</span></span></span>.</p>
+</div>
+
+<div class="flag">
+  <h3>5 · The watering log has a 16-day gap <span class="pill warn">Record keeping</span></h3>
+  <img src="images/flag-soil.png" alt="annotated: the dry soil and perlite surface in the top-down canopy photo">
+  <p>The last watering in <code>grow_context.md</code> is 7/16. That was 16 days ago. The normal cycle in this tent is ~4 days.</p>
+  <p><b>The plant does not look thirsty.</b> No leaf droops. No leaf claws. The fan leaves are flat and green. A plant in a 2×2 pot does not go 16 days without water in late flower and look like this. So you almost certainly watered the plant and did not write it down.</p>
+  <p>The problem is the record, not the plant. The daily report reads this file on every run. A missing water date makes every soil-moisture read wrong. Write each watering into the change log on the day you do it. Record the date, the volume and the method.</p>
+  <p>The soil surface reads dry in the red box. Do the finger test before the next water. Push a finger 2 inches into the soil. Water if it is dry at that depth. Also lift the pot — weight is the better test.</p>
+  <p>Source: <span class="kb-ref" tabindex="0" role="button" aria-label="Knowledge base: 03 · Environmental Stress &amp; Watering"><span class="kb-ref__icon" aria-hidden="true">📖</span><span class="kb-ref__label">KB 03 · Environmental and watering</span><span class="kb-pop" role="tooltip"><span class="kb-pop__title">03 · Environmental Stress &amp; Watering</span><span class="kb-pop__body">These cause more &quot;deficiency&quot; misdiagnoses than actual deficiencies. Check here early.</span><span class="kb-pop__sections">Covers: pH &amp; nutrient lockout · Nutrient burn vs light burn vs heat (the big three look-alikes) · Light &amp; heat · Temperature / humidity / VPD by stage · Watering: over vs under vs heat droop · Wind burn</span><span class="kb-pop__note">GrowBuddy knowledge base · 03-environmental-and-watering.md</span></span></span>.</p>
+</div>
+
+<div class="flag ok">
+  <h3>6 · Lower and interior leaf yellowing <span class="pill good">Normal — closed</span></h3>
+  <img src="images/flag-yellowing.png" alt="annotated: yellow interior fan leaves in the center of the canopy">
+  <p>The interior and lower fan leaves continue to turn yellow. The level is moderate. It matches 7/19. It did not get worse and it did not climb into the tops.</p>
+  <p>The knowledge base gives four tests for natural senescence. This case passes all four. <b>Late:</b> day ~59, past the breeder finish date. <b>Bottom-up:</b> only old, low, shaded leaves; every cola and every growing point stays green. <b>Slow:</b> the same moderate level across three reports over 19 days. <b>Ripeness advances in parallel:</b> the pistils ripened strongly in the same period.</p>
+  <p>This report tracked this item since 7/1 as a watch item. It was a possible potassium draw on 7/13. <b>Close it.</b> At day ~59 with this much pistil ripening, the senescence read is strong. A living soil plant finishes itself. Do not feed it. Do not flush it — living soil holds no salt reservoir to flush.</p>
+  <p>One limit: this set has no macro photo of a single yellow leaf, so I could not re-check the 7/13 serration-margin pattern at leaf level. Two sets in a row now lack that shot. It no longer changes the action, because the action is "do nothing" either way.</p>
+  <p>Source: <span class="kb-ref" tabindex="0" role="button" aria-label="Knowledge base: 16 · Senescence (natural fade) — and how to tell it from a problem"><span class="kb-ref__icon" aria-hidden="true">📖</span><span class="kb-ref__label">KB 16 · Senescence</span><span class="kb-pop" role="tooltip"><span class="kb-pop__title">16 · Senescence (natural fade) — and how to tell it from a problem</span><span class="kb-pop__body">Late-life yellowing of a cannabis plant is often not a deficiency. It is senescence: an evolved, age-programmed shutdown in which the plant strips nutrients out of old leaves and moves them into the buds. The diagnostic problem is that senescence and a real deficiency share the same mechanism and the same look, so the…</span><span class="kb-pop__sections">Covers: What senescence actually is (mechanism) · Timeline by plant age · Distinguishing senescence from the look-alikes · Deliberate &quot;fade&quot; / flushing — folklore vs evidence · Age-based decision rules</span><span class="kb-pop__note">GrowBuddy knowledge base · 16-senescence.md</span></span></span>; <span class="kb-ref" tabindex="0" role="button" aria-label="Knowledge base: 07 · Organic / Living Soil / No-Till"><span class="kb-ref__icon" aria-hidden="true">📖</span><span class="kb-ref__label">KB 07 · Organic living soil</span><span class="kb-pop" role="tooltip"><span class="kb-pop__title">07 · Organic / Living Soil / No-Till</span><span class="kb-pop__body">A living-soil grow is a different system from bottled-nutrient growing, and most generic diagnosis advice gives the wrong fix here. If the grow is living soil / no-till, read this before recommending anything.</span><span class="kb-pop__sections">Covers: The core idea · How feeding/correcting works (and what NOT to say) · Diagnosis differences in living soil · Practical no-till setup &amp; routine (real-world basics) · Practical rule for the diagnoser</span><span class="kb-pop__note">GrowBuddy knowledge base · 07-organic-living-soil.md</span></span></span>.</p>
+</div>
+
+<div class="flag ok">
+  <h3>7 · Pests, mold and mildew <span class="pill good">None found</span></h3>
+  <p>I examined all nine photos. I also examined magnified crops of the two cola close-ups. I found none of the following:</p>
+  <ul>
+    <li>No stippling on any upper leaf surface, and no webbing. The spider mites from 6/9 stay clear.</li>
+    <li>No white powder on any leaf. The heavy frost on the sugar leaves is trichomes, not powdery mildew. Trichomes sparkle. Powdery mildew is dull and flat.</li>
+    <li>No gray fuzz, no brown mush and no dark lesion on any visible bud surface.</li>
+    <li>No chewed leaf edges and no insect on any frame.</li>
+  </ul>
+  <p>Read this result with flag 3. It covers the outside of the canopy only.</p>
+  <p>Source: <span class="kb-ref" tabindex="0" role="button" aria-label="Knowledge base: 04 · Pests"><span class="kb-ref__icon" aria-hidden="true">📖</span><span class="kb-ref__label">KB 04 · Pests</span><span class="kb-pop" role="tooltip"><span class="kb-pop__title">04 · Pests</span><span class="kb-pop__body">Most pests are easiest to catch on leaf undersides and in new growth; a jeweler's loupe or USB microscope (60–100x) is essential for the microscopic ones. Early signs: stippling/speckling, curled or twisted new growth, sticky residue, webbing, or tiny moving dots.</span><span class="kb-pop__sections">Covers: Spider mites (most common, most feared) · Broad mites &amp; russet mites (microscopic, often misdiagnosed) · Thrips · Fungus gnats · Aphids · Whiteflies</span><span class="kb-pop__note">GrowBuddy knowledge base · 04-pests.md</span></span></span>; <span class="kb-ref" tabindex="0" role="button" aria-label="Knowledge base: 05 · Diseases (Mold, Rot, Mildew)"><span class="kb-ref__icon" aria-hidden="true">📖</span><span class="kb-ref__label">KB 05 · Diseases</span><span class="kb-pop" role="tooltip"><span class="kb-pop__title">05 · Diseases (Mold, Rot, Mildew)</span><span class="kb-pop__body">Fungal problems are mostly an environment story: humidity, temperature, and airflow. Prevention beats treatment because by the time buds are affected, that material is usually lost.</span><span class="kb-pop__sections">Covers: Bud rot / Botrytis (the dangerous one in flower) · Powdery mildew (PM) · Leaf septoria (yellow leaf spot) — outdoor · Root rot (Pythium) · Prevention (covers all three)</span><span class="kb-pop__note">GrowBuddy knowledge base · 05-diseases.md</span></span></span>.</p>
+</div>
+
+</details>
+
+<details class="report-section" open>
+<summary><h2 id="8-assumptions">8 · Assumptions and sources</h2><span class="report-section__chev" aria-hidden="true"></span></summary>
+
+
+<p>These are inferences, not observed facts. Each one could change the report if it is wrong.</p>
+
+<ul>
+  <li><b>Day count.</b> I count day ~59 of flower from the 6/3 flip date in <code>grow_context.md</code>. I count ~13.5 weeks from the 4/28 germination date. Both dates come from that file.</li>
+  <li><b>Photo light.</b> The photos appear to be taken under the grow light. The knowledge base says color reads are wrong under a grow light. Every color statement in this report carries that error. Take one photo at the tent door or with a phone flash for a true color read.</li>
+  <li><b>Purple color = anthocyanin.</b> I name this from color and from timing. I did not confirm it. No test was done.</li>
+  <li><b>Spire growth = foxtailing.</b> I match this to the knowledge base description by shape. The cause is not determined. See flag 2.</li>
+  <li><b>Canopy density.</b> The 8/1 top-down photo is framed wider than the 7/19 photo. It shows the tent floor and more of the tent walls. I therefore did not compare canopy density between the two reports. Any read of "more open" or "less dense" would be a camera artifact.</li>
+  <li><b>Unlogged waterings.</b> I assume you watered the plant between 7/16 and today and did not record it. The plant shows no drought stress. See flag 5.</li>
+  <li><b>No defoliation logged.</b> I assume you removed no leaves since 7/19, because the log records none.</li>
+  <li><b>Cola count.</b> The count comes from photographs. Overlap hides some tops. Treat the figure as an estimate.</li>
+  <li><b>Yield figures.</b> All three yield methods are grower heuristics, not measurements. The grams-per-watt and ounces-per-square-foot bands are general indoor figures, not values sourced for this strain.</li>
+  <li><b>Temperature and humidity.</b> No reading of either exists in <code>grow_context.md</code> for the whole grow. Flags 2 and 4 both need a temperature reading and cannot close without one.</li>
+</ul>
+
+<p><b>Knowledge base files used:</b>
+<span class="kb-ref" tabindex="0" role="button" aria-label="Knowledge base: 01 · Diagnosis Framework"><span class="kb-ref__icon" aria-hidden="true">📖</span><span class="kb-ref__label">01 · Diagnosis framework</span><span class="kb-pop" role="tooltip"><span class="kb-pop__title">01 · Diagnosis Framework</span><span class="kb-pop__body">The method for turning &quot;something looks off&quot; into a calibrated diagnosis. Work the steps in order; do not jump to a nutrient name from leaf color alone.</span><span class="kb-pop__sections">Covers: Step 0 — Gather context (decides most cases) · Step 1 — Rule out pH / lockout and watering FIRST · Step 2 — Localize the symptom (mobile vs immobile) · Step 3 — Characterize the pattern · Step 4 — Disambiguate look-alikes · Step 5 — Output: diagnosis, confidence, assumptions, sources</span><span class="kb-pop__note">GrowBuddy knowledge base · 01-diagnosis-framework.md</span></span></span> ·
+<span class="kb-ref" tabindex="0" role="button" aria-label="Knowledge base: 03 · Environmental Stress &amp; Watering"><span class="kb-ref__icon" aria-hidden="true">📖</span><span class="kb-ref__label">03 · Environmental and watering</span><span class="kb-pop" role="tooltip"><span class="kb-pop__title">03 · Environmental Stress &amp; Watering</span><span class="kb-pop__body">These cause more &quot;deficiency&quot; misdiagnoses than actual deficiencies. Check here early.</span><span class="kb-pop__sections">Covers: pH &amp; nutrient lockout · Nutrient burn vs light burn vs heat (the big three look-alikes) · Light &amp; heat · Temperature / humidity / VPD by stage · Watering: over vs under vs heat droop · Wind burn</span><span class="kb-pop__note">GrowBuddy knowledge base · 03-environmental-and-watering.md</span></span></span> ·
+<span class="kb-ref" tabindex="0" role="button" aria-label="Knowledge base: 04 · Pests"><span class="kb-ref__icon" aria-hidden="true">📖</span><span class="kb-ref__label">04 · Pests</span><span class="kb-pop" role="tooltip"><span class="kb-pop__title">04 · Pests</span><span class="kb-pop__body">Most pests are easiest to catch on leaf undersides and in new growth; a jeweler's loupe or USB microscope (60–100x) is essential for the microscopic ones. Early signs: stippling/speckling, curled or twisted new growth, sticky residue, webbing, or tiny moving dots.</span><span class="kb-pop__sections">Covers: Spider mites (most common, most feared) · Broad mites &amp; russet mites (microscopic, often misdiagnosed) · Thrips · Fungus gnats · Aphids · Whiteflies</span><span class="kb-pop__note">GrowBuddy knowledge base · 04-pests.md</span></span></span> ·
+<span class="kb-ref" tabindex="0" role="button" aria-label="Knowledge base: 05 · Diseases (Mold, Rot, Mildew)"><span class="kb-ref__icon" aria-hidden="true">📖</span><span class="kb-ref__label">05 · Diseases</span><span class="kb-pop" role="tooltip"><span class="kb-pop__title">05 · Diseases (Mold, Rot, Mildew)</span><span class="kb-pop__body">Fungal problems are mostly an environment story: humidity, temperature, and airflow. Prevention beats treatment because by the time buds are affected, that material is usually lost.</span><span class="kb-pop__sections">Covers: Bud rot / Botrytis (the dangerous one in flower) · Powdery mildew (PM) · Leaf septoria (yellow leaf spot) — outdoor · Root rot (Pythium) · Prevention (covers all three)</span><span class="kb-pop__note">GrowBuddy knowledge base · 05-diseases.md</span></span></span> ·
+<span class="kb-ref" tabindex="0" role="button" aria-label="Knowledge base: 06 · Grow Cycle — What's Normal When"><span class="kb-ref__icon" aria-hidden="true">📖</span><span class="kb-ref__label">06 · Grow cycle</span><span class="kb-pop" role="tooltip"><span class="kb-pop__title">06 · Grow Cycle — What's Normal When</span><span class="kb-pop__body">Knowing the stage prevents false alarms (e.g., late-flower leaf fade is normal, not a deficiency — see 16 · Senescence) and sets expectations. Timelines are typical photoperiod ranges; genetics vary.</span><span class="kb-pop__sections">Covers: Stages · Photoperiod vs Autoflower (critical distinction) · Whole-plant &amp; structural issues (not a leaf symptom) · Harvest timing (trichomes)</span><span class="kb-pop__note">GrowBuddy knowledge base · 06-grow-cycle.md</span></span></span> ·
+<span class="kb-ref" tabindex="0" role="button" aria-label="Knowledge base: 07 · Organic / Living Soil / No-Till"><span class="kb-ref__icon" aria-hidden="true">📖</span><span class="kb-ref__label">07 · Organic living soil</span><span class="kb-pop" role="tooltip"><span class="kb-pop__title">07 · Organic / Living Soil / No-Till</span><span class="kb-pop__body">A living-soil grow is a different system from bottled-nutrient growing, and most generic diagnosis advice gives the wrong fix here. If the grow is living soil / no-till, read this before recommending anything.</span><span class="kb-pop__sections">Covers: The core idea · How feeding/correcting works (and what NOT to say) · Diagnosis differences in living soil · Practical no-till setup &amp; routine (real-world basics) · Practical rule for the diagnoser</span><span class="kb-pop__note">GrowBuddy knowledge base · 07-organic-living-soil.md</span></span></span> ·
+<span class="kb-ref" tabindex="0" role="button" aria-label="Knowledge base: 10 · Symptom Index (reverse lookup)"><span class="kb-ref__icon" aria-hidden="true">📖</span><span class="kb-ref__label">10 · Symptom index</span><span class="kb-pop" role="tooltip"><span class="kb-pop__title">10 · Symptom Index (reverse lookup)</span><span class="kb-pop__body">Start here when you have a symptom and want candidates fast. Find the symptom, read the ranked causes, then open the linked file and confirm with the framework. Causes are listed most-likely-first for a typical grow.</span><span class="kb-pop__sections">Covers: Yellowing · Tips &amp; edges · Spots &amp; color · Whole-plant / structural (not a leaf color) · Shape, posture, growth · Holes / eaten tissue (chewing damage — mostly outdoor)</span><span class="kb-pop__note">GrowBuddy knowledge base · 10-symptom-index.md</span></span></span> ·
+<span class="kb-ref" tabindex="0" role="button" aria-label="Knowledge base: 11 · Photo, Triage &amp; Confidence Guide"><span class="kb-ref__icon" aria-hidden="true">📖</span><span class="kb-ref__label">11 · Photo and triage guide</span><span class="kb-pop" role="tooltip"><span class="kb-pop__title">11 · Photo, Triage &amp; Confidence Guide</span><span class="kb-pop__body">How to get a good diagnosis, how urgent it is, and how sure to be. Use this to decide what to ask for and how to caveat the answer.</span><span class="kb-pop__sections">Covers: What photo(s) actually enable a diagnosis · Triage: how urgent is it? · Confidence calibration · Hard don'ts</span><span class="kb-pop__note">GrowBuddy knowledge base · 11-photo-and-triage-guide.md</span></span></span> ·
+<span class="kb-ref" tabindex="0" role="button" aria-label="Knowledge base: 16 · Senescence (natural fade) — and how to tell it from a problem"><span class="kb-ref__icon" aria-hidden="true">📖</span><span class="kb-ref__label">16 · Senescence</span><span class="kb-pop" role="tooltip"><span class="kb-pop__title">16 · Senescence (natural fade) — and how to tell it from a problem</span><span class="kb-pop__body">Late-life yellowing of a cannabis plant is often not a deficiency. It is senescence: an evolved, age-programmed shutdown in which the plant strips nutrients out of old leaves and moves them into the buds. The diagnostic problem is that senescence and a real deficiency share the same mechanism and the same look, so the…</span><span class="kb-pop__sections">Covers: What senescence actually is (mechanism) · Timeline by plant age · Distinguishing senescence from the look-alikes · Deliberate &quot;fade&quot; / flushing — folklore vs evidence · Age-based decision rules</span><span class="kb-pop__note">GrowBuddy knowledge base · 16-senescence.md</span></span></span> ·
+<span class="kb-ref" tabindex="0" role="button" aria-label="Knowledge base: Papaya Crush"><span class="kb-ref__icon" aria-hidden="true">📖</span><span class="kb-ref__label">strains/papaya-crush</span><span class="kb-pop" role="tooltip"><span class="kb-pop__title">Papaya Crush</span><span class="kb-pop__body">Breeder: Bloom Seed Co. · Lineage: Papaya × Bolo Runtz · Type: indica-leaning hybrid · THC: ~25%</span><span class="kb-pop__sections">Covers: Grow facts (sourced) · Diagnostic flags (sourced only) · Assumptions &amp; to-verify (NOT established fact) · Grower notes (external report — r/BloomSeedCompany journal `1rncu6s`, retrieved via browser)</span><span class="kb-pop__note">GrowBuddy knowledge base · strains/papaya-crush.md</span></span></span>
+</p>
+
+<p><b>Comparison report:</b> <code>manual-report-20260719/report.html</code> (published as <code>growdaily/2026-07-19-091153</code>).</p>
+
+<p><b>External sources</b> (through the knowledge base, not fetched again for this report): breeder listing for the ~56-day flower time and the ~475 g/m² yield figure — <a href="https://blackbuffaloseedbank.com/bloom-seed-co/papaya-crush-seeds/">BlackBuffalo</a>; trichome harvest timing — <a href="https://www.growweedeasy.com/pick-perfect-harvest-time-with-a-microscope">GrowWeedEasy</a>, <a href="https://www.spider-farmer.com/blog/trichome-when-to-harvest/">Spider Farmer</a>; foxtailing — <a href="https://www.growweedeasy.com/foxtails">GrowWeedEasy</a>, <a href="https://humboldtseedcompany.com/fix-foxtailing-buds/">Humboldt Seed Company</a>; Papaya parent violet hues — <a href="https://www.strainpedia.com/papaya/">Strainpedia</a>.</p>
+
+</details>
+
+<details class="report-section" open>
+<summary><h2 id="9-conclusion">9 · Conclusion</h2><span class="report-section__chev" aria-hidden="true"></span></summary>
+
+
+<p>The plant is healthy and it is ripe. In 13 days it moved from "ripening" to "at or past the finish line". The pistils ripened strongly across every quadrant. The buds got larger and the frost got heavier. No pest, no mold and no rot shows in any of the nine photos. The lower-leaf yellowing that this report tracked since 7/1 is now clearly normal senescence, and you can close it.</p>
+
+<p>The problem is not the plant. The problem is that you have run out of the information you need. The plant is past its breeder finish date. Pistil color cannot set a harvest date, and pistil color is all you have. This is the third report in a row that says the same thing. The one action that matters this week costs about ten dollars: buy a loupe.</p>
+
+<p>Two smaller items follow from the same missing data. The pale spires at the top colas could be light or heat stress, or they could be a normal late flush — a canopy temperature reading decides it, and no temperature reading exists for this grow. The new purple color is almost certainly benign, but the same reading would confirm it.</p>
+
+<p>One coverage note for the next set. Keep the two cola close-ups; they are the best photos any manual report has had. But add the cross-sections back. At day ~59 with dense buds, the inside of the canopy is the one place a problem can hide, and this set does not show it.</p>
+
+</details>
+
+<details class="report-section" open>
+<summary><h2 id="10-next-actions">10 · Next actions</h2><span class="report-section__chev" aria-hidden="true"></span></summary>
+
+
+<ol class="next">
+  <li><b>Buy a loupe or a USB scope (60–100x). Do this first.</b> Examine the trichomes on the calyxes of three or four different tops. Do not examine the sugar leaf tips. Record what you see: the percentage that is clear, cloudy and amber. This one action unblocks the harvest decision. Everything else can wait.</li>
+  <li><b>Measure the canopy temperature.</b> Measure it during the lights-on period, at the top of the canopy. Measure it again at night if you can. Write both readings into <code>grow_context.md</code>. This closes flag 2 and it confirms flag 4. No temperature reading exists for this grow.</li>
+  <li><b>Inspect the inside of the canopy by hand.</b> Open the canopy. Look at the base of the four or five largest colas. Look for gray fuzz, a brown or mushy spot, or a dry leaf that pulls out of a bud. Squeeze a top gently. Do this before you harvest.</li>
+  <li><b>Do the finger test and the pot-lift test before the next water.</b> Push a finger 2 inches into the soil. Water only if it is dry at that depth.</li>
+  <li><b>Write every watering into the change log on the day you do it.</b> Record the date, the volume and the method. The log has no entry since 7/16.</li>
+  <li><b>Take one photo in neutral light.</b> Take it at the tent door, or use the phone flash. Do not use the grow light. This gives a true color read of the purple sugar leaves.</li>
+  <li><b>Add cross-section photos to the next set.</b> Photograph the bud bases inside the canopy. Keep the two cola close-ups as well.</li>
+  <li><b>Take one macro photo of a single yellow leaf</b> if you want the potassium question fully closed. This is optional. The action does not change either way.</li>
+  <li><b>Do not feed the plant and do not flush it.</b> This is living soil in a no-till bed. Let it finish on water.</li>
+  <li><b>Weigh the harvest wet, then weigh it again dry.</b> Write both numbers down. That gives the next grow a real yield figure instead of an estimate.</li>
+</ol>
+
+</details>
+
+<footer>
+  Manual multi-photo check-in · Papaya Crush · flower day ~59 · August 1, 2026<br>
+  Nine photos submitted through Telegram. Compared against <code>manual-report-20260719</code> (day ~46).<br>
+  Report text follows ASD-STE100 Simplified Technical English writing rules. It is not a certified STE document.
+</footer>
+
+</div>
+<script src="../kb-popover.js" defer></script>
+<script src="../lightbox.js" defer></script>
+</body>
+</html>
