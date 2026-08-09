@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Foxtail Report — Papaya Crush — August 9, 2026</title>
+<style>
+  :root{
+    --bg:#10140f; --card:#181d15; --ink:#e8efe2; --mut:#9bb08c;
+    --line:#2c3626; --accent:#7cc24a; --warn:#e0b341; --good:#7cc24a; --bad:#e06a41;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+  .wrap{max-width:1000px;margin:0 auto;padding:32px 20px 80px}
+  header{border-bottom:1px solid var(--line);padding-bottom:20px;margin-bottom:8px}
+  h1{font-size:28px;margin:0 0 6px}
+  h2{font-size:21px;margin:36px 0 12px;color:var(--accent);
+    border-left:3px solid var(--accent);padding-left:10px}
+  h3{font-size:17px;margin:22px 0 6px}
+  .sub{color:var(--mut);font-size:15px}
+  .meta{display:flex;flex-wrap:wrap;gap:8px 24px;margin-top:14px;font-size:14px;color:var(--mut)}
+  .meta b{color:var(--ink);font-weight:600}
+  .verdict{background:var(--card);border:1px solid var(--line);border-radius:12px;
+    padding:18px 20px;margin:20px 0}
+  .verdict .big{font-size:18px;font-weight:600}
+  .pill{display:inline-block;font-size:12px;font-weight:700;letter-spacing:.04em;
+    text-transform:uppercase;padding:3px 9px;border-radius:999px;vertical-align:middle}
+  .pill.good{background:rgba(124,194,74,.16);color:var(--good)}
+  .pill.warn{background:rgba(224,179,65,.16);color:var(--warn)}
+  .pill.bad{background:rgba(224,106,65,.16);color:var(--bad)}
+  p{margin:10px 0}
+  ul,ol{margin:10px 0;padding-left:22px}
+  li{margin:6px 0}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:14px;margin:16px 0}
+  figure{margin:0;background:var(--card);border:1px solid var(--line);border-radius:10px;overflow:hidden}
+  figure img{display:block;width:100%;height:220px;object-fit:cover;cursor:zoom-in}
+  figcaption{padding:8px 12px;font-size:13px;color:var(--mut)}
+  figcaption b{color:var(--ink)}
+  .flag{background:var(--card);border:1px solid var(--line);border-left:3px solid var(--warn);
+    border-radius:8px;padding:12px 16px;margin:16px 0}
+  .flag.ok{border-left-color:var(--good)}
+  .flag.info{border-left-color:var(--accent)}
+  .flag h3{margin:0 0 4px}
+  .flag img{display:block;width:100%;max-width:420px;border-radius:8px;margin:10px 0 2px;cursor:zoom-in}
+  table{width:100%;border-collapse:collapse;margin:14px 0;font-size:14.5px}
+  th,td{text-align:left;padding:9px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+  th{color:var(--mut);font-weight:600}
+  .next li{margin:9px 0}
+  .next b{color:var(--accent)}
+  .box{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:16px 20px;margin:16px 0}
+  .box.key{border-left:3px solid var(--accent)}
+  details{background:var(--card);border:1px solid var(--line);border-radius:10px;
+    padding:14px 18px;margin:14px 0}
+  details summary{cursor:pointer;font-weight:600;color:var(--accent);outline:none}
+  details[open] summary{margin-bottom:10px}
+  .stenote{background:var(--card);border:1px solid var(--line);border-left:3px solid var(--accent);
+    border-radius:8px;padding:12px 16px;margin:16px 0;font-size:14.5px;color:var(--mut)}
+  .stenote b{color:var(--ink)}
+  footer{margin-top:48px;border-top:1px solid var(--line);padding-top:16px;
+    font-size:13px;color:var(--mut)}
+  a{color:var(--accent)}
+  :root{--foreground:var(--ink);--muted-foreground:var(--mut);--border:var(--line);--radius:10px}
+</style>
+<link rel="stylesheet" href="../kb-popover.css">
+<link rel="stylesheet" href="../lightbox.css">
+</head>
+<body>
+<div class="wrap">
+
+<a href="../index.html" style="display:inline-block;margin-bottom:10px;color:var(--mut);text-decoration:none;font-size:14px">&larr; All reports</a>
+
+<header>
+  <h1>Foxtail Report — Papaya Crush</h1>
+  <div class="sub">Special single-topic report · Sunday, August 9, 2026 · foxtailing, light and temperature only</div>
+  <div class="meta">
+    <span><b>Strain:</b> Papaya Crush (Papaya × Bolo Runtz)</span>
+    <span><b>Stage:</b> Flower, day ~67 (flipped 6/3)</span>
+    <span><b>Breeder flower time:</b> ~56 days — the plant is 11 days past it</span>
+    <span><b>Tent:</b> 2×2 AC Infinity · SF-2000 Pro</span>
+    <span><b>Medium:</b> Living soil, no-till</span>
+    <span><b>Photos:</b> 8, taken 8/9</span>
+  </div>
+</header>
+
+<div class="stenote">
+  <b>About this report.</b> This report covers one topic only: the foxtailing on this plant, and what to do about the light and the temperature. It does not cover the other items in the grow. The text uses Simplified Technical English (ASD-STE100): short sentences, the active voice, and simple tenses. Grow words such as <i>pistil</i>, <i>calyx</i>, <i>cola</i>, <i>trichome</i> and <i>foxtail</i> are Technical Names, which the standard permits. No STE checker software examined this report.
+</div>
+
+<div class="verdict">
+  <span class="pill warn">Environment is the probable cause</span>
+  <p class="big">The foxtailing is real, and it is not even across the plant. The top colas foxtail strongly. The middle plane foxtails mildly. The bottom tier does not foxtail at all. That pattern fails the test for genetic foxtailing, which needs even growth across the whole plant. The environment data supports the same conclusion: this tent runs above the published flowering temperature ceiling for 24 hours each day. The primary cause is heat, and the room is the source of the heat — not the light.</p>
+</div>
+
+<details class="report-section" open>
+<summary><h2 id="1-what-foxtailing-is">1 · What foxtailing is</h2><span class="report-section__chev" aria-hidden="true"></span></summary>
+
+
+<p>A normal bud gets fatter as it ripens. A foxtailed bud does something different. It grows <b>new calyx clusters on top of the bud that already formed</b>. The new clusters stack into a tower, or spire. The spire carries fresh white pistils, and it sits above older orange pistils.</p>
+
+<p>The knowledge base gives two causes (<span class="kb-ref" tabindex="0" role="button" aria-label="Knowledge base: 03 · Environmental Stress &amp; Watering"><span class="kb-ref__icon" aria-hidden="true">📖</span><span class="kb-ref__label">KB 03</span><span class="kb-pop" role="tooltip"><span class="kb-pop__title">03 · Environmental Stress &amp; Watering</span><span class="kb-pop__body">These cause more &quot;deficiency&quot; misdiagnoses than actual deficiencies. Check here early.</span><span class="kb-pop__sections">Covers: pH &amp; nutrient lockout · Nutrient burn vs light burn vs heat (the big three look-alikes) · Light &amp; heat · Temperature / humidity / VPD by stage · Watering: over vs under vs heat droop · Wind burn</span><span class="kb-pop__note">GrowBuddy knowledge base · 03-environmental-and-watering.md</span></span></span>):</p>
+
+<table>
+  <tr><th>Type</th><th>Where it appears</th><th>How it looks</th><th>Is it a problem?</th></tr>
+  <tr>
+    <td><b>Genetic foxtail</b></td>
+    <td>Even across many bud sites</td>
+    <td>Symmetrical, healthy green, no stress signs</td>
+    <td>No. It is a trait of some lines.</td>
+  </tr>
+  <tr>
+    <td><b>Stress foxtail</b></td>
+    <td>At the tops, nearest the light</td>
+    <td>Irregular, pale or bleached new growth</td>
+    <td>Yes. Heat or light intensity causes it.</td>
+  </tr>
+</table>
+
+</details>
+
+<details class="report-section" open>
+<summary><h2 id="2-what-the-plant-shows">2 · What the plant shows</h2><span class="report-section__chev" aria-hidden="true"></span></summary>
+
+
+<p>I examined 8 photos. I enlarged each bud site and scored it by canopy plane. The result is a gradient. It is strongest at the top, and it falls to zero at the bottom.</p>
+
+<table>
+  <tr><th>Canopy plane</th><th>Sites scored</th><th>Foxtail?</th><th>What the photos show</th></tr>
+  <tr><td><b>Top colas</b></td><td>3 of 3</td><td><span class="pill bad">Strong</span></td><td>Several stacked spires on each cola. Pale green new calyx tissue. Fresh cream pistils above ripe orange ones.</td></tr>
+  <tr><td><b>Middle plane</b></td><td>2 of 2</td><td><span class="pill warn">Mild</span></td><td>One short spire per bud. Lumpy stacked calyx knots.</td></tr>
+  <tr><td><b>Bottom tier</b></td><td>2 photos</td><td><span class="pill good">None</span></td><td>Small immature green nubs on bare stems. White pistils. Almost no bud mass.</td></tr>
+</table>
+
+<div class="flag">
+  <h3>Top plane — strong foxtail</h3>
+  <p>Both top colas carry several spires. The spire calyxes read pale <b>green</b>. They do not read bleached white. This detail matters, and section 3 uses it.</p>
+  <a href="images/flag-top-plane.jpg"><img src="images/flag-top-plane.jpg" alt="Two top colas with foxtail spires boxed in red"></a>
+</div>
+
+<div class="flag">
+  <h3>Middle plane — mild foxtail</h3>
+  <p>The middle bud pushes one pale spire out of its crown. The spire is shorter than the spires at the top. The count per bud is lower.</p>
+  <a href="images/flag-mid-plane.jpg"><img src="images/flag-mid-plane.jpg" alt="Mid-canopy bud with a short foxtail spire boxed in red"></a>
+</div>
+
+<div class="flag ok">
+  <h3>Bottom tier — no foxtail</h3>
+  <p>The bottom sites are <b>not</b> foxtailed. They are undeveloped larf. Each site holds one small flower cluster that never filled out. The pistils are still white, so these sites are immature.</p>
+  <p>The difference is important. A foxtail stacks a tower <b>on top of a ripe bud</b>. At the bottom there is no ripe bud under the growth. There is only a small cluster that stopped early.</p>
+  <a href="images/flag-low-plane.jpg"><img src="images/flag-low-plane.jpg" alt="Lowest-tier bud sites, small immature nubs, boxed in red"></a>
+</div>
+
+</details>
+
+<details class="report-section" open>
+<summary><h2 id="3-the-diagnosis">3 · Which cause fits</h2><span class="report-section__chev" aria-hidden="true"></span></summary>
+
+
+<p>The evidence points both ways, so I give each side.</p>
+
+<h3>Evidence for genetic foxtail</h3>
+<ul>
+  <li>The spire calyxes are pale <b>green</b>. Stress foxtail bleaches the new growth white.</li>
+  <li>No leaf in any photo tacos or cups. Heat stress usually produces both.</li>
+  <li>The last measured light level was just below 800 PPFD at the tops (7/13). <span class="kb-ref" tabindex="0" role="button" aria-label="Knowledge base: 03 · Environmental Stress &amp; Watering"><span class="kb-ref__icon" aria-hidden="true">📖</span><span class="kb-ref__label">KB 03</span><span class="kb-pop" role="tooltip"><span class="kb-pop__title">03 · Environmental Stress &amp; Watering</span><span class="kb-pop__body">These cause more &quot;deficiency&quot; misdiagnoses than actual deficiencies. Check here early.</span><span class="kb-pop__sections">Covers: pH &amp; nutrient lockout · Nutrient burn vs light burn vs heat (the big three look-alikes) · Light &amp; heat · Temperature / humidity / VPD by stage · Watering: over vs under vs heat droop · Wind burn</span><span class="kb-pop__note">GrowBuddy knowledge base · 03-environmental-and-watering.md</span></span></span> puts the ambient-CO₂ ceiling in the 800s.</li>
+</ul>
+
+<h3>Evidence against genetic foxtail</h3>
+<ul>
+  <li><b>The distribution is not even.</b> Genetic foxtail needs even growth across the plant. This plant shows a clear top-to-bottom gradient.</li>
+  <li>The temperature data in section 4 puts the whole tent above the flowering ceiling all day and all night.</li>
+  <li>The temperature probe sits below the top colas, so it under-reads the hottest zone. Section 4 explains this.</li>
+</ul>
+
+<div class="box key">
+  <p><b>Conclusion: the environment is the probable primary cause. Confidence is moderate.</b> The plant may also carry a foxtail tendency in its genetics, because Papaya Crush is an exotic cross. The two causes can act together.</p>
+  <p><b>One honest limit.</b> The bottom sites hold almost no bud mass. Their lack of foxtail can mean low vigour instead of low stress. That confusion is real, and it stops the confidence from going higher.</p>
+</div>
+
+</details>
+
+<details class="report-section" open>
+<summary><h2 id="4-the-environment">4 · The environment data</h2><span class="report-section__chev" aria-hidden="true"></span></summary>
+
+
+<p>The grower measured the tent on 8/9. These are the first environment numbers of this grow.</p>
+
+<table>
+  <tr><th>Measurement</th><th>This tent</th><th>Published target</th><th>Verdict</th></tr>
+  <tr><td>Canopy temperature, lights on</td><td>78–84 °F</td><td>Under 80 °F</td><td><span class="pill bad">Over</span></td></tr>
+  <tr><td>Temperature, lights off</td><td>78–81 °F</td><td>~64–70 °F</td><td><span class="pill bad">Over</span></td></tr>
+  <tr><td>Day-to-night difference</td><td>0–3 °F</td><td>~10 °F</td><td><span class="pill bad">Too small</span></td></tr>
+  <tr><td>Relative humidity</td><td>35–45%</td><td>40–55%, lower late</td><td><span class="pill good">Acceptable</span></td></tr>
+  <tr><td>VPD (calculated)</td><td>~1.6–2.3 kPa</td><td>1.2–1.5 kPa</td><td><span class="pill warn">High</span></td></tr>
+</table>
+
+<p>Three published sources set the flowering ceiling near 80 °F, not near 85 °F:</p>
+<ul>
+  <li><b>MSNL:</b> "Foxtailing is more prevalent when temperatures exceed 26°C" — that is 78.8 °F. They advise 22 °C (72 °F) for the final 4 weeks.</li>
+  <li><b>Grow Weed Easy:</b> keep temperatures "under 80°F (26°C) throughout the flowering stage."</li>
+  <li><b>Sensi Seeds:</b> 20–24 °C by day and 18–21 °C by night in flower. Drop to 21–23 °C near harvest.</li>
+</ul>
+
+<p>This grow's own knowledge base agrees with them in one file and disagrees in another. <span class="kb-ref" tabindex="0" role="button" aria-label="Knowledge base: 05 · Diseases (Mold, Rot, Mildew)"><span class="kb-ref__icon" aria-hidden="true">📖</span><span class="kb-ref__label">KB 05</span><span class="kb-pop" role="tooltip"><span class="kb-pop__title">05 · Diseases (Mold, Rot, Mildew)</span><span class="kb-pop__body">Fungal problems are mostly an environment story: humidity, temperature, and airflow. Prevention beats treatment because by the time buds are affected, that material is usually lost.</span><span class="kb-pop__sections">Covers: Bud rot / Botrytis (the dangerous one in flower) · Powdery mildew (PM) · Leaf septoria (yellow leaf spot) — outdoor · Root rot (Pythium) · Prevention (covers all three)</span><span class="kb-pop__note">GrowBuddy knowledge base · 05-diseases.md</span></span></span> gives flowering as 68–78 °F. The foxtail entry in <span class="kb-ref" tabindex="0" role="button" aria-label="Knowledge base: 03 · Environmental Stress &amp; Watering"><span class="kb-ref__icon" aria-hidden="true">📖</span><span class="kb-ref__label">KB 03</span><span class="kb-pop" role="tooltip"><span class="kb-pop__title">03 · Environmental Stress &amp; Watering</span><span class="kb-pop__body">These cause more &quot;deficiency&quot; misdiagnoses than actual deficiencies. Check here early.</span><span class="kb-pop__sections">Covers: pH &amp; nutrient lockout · Nutrient burn vs light burn vs heat (the big three look-alikes) · Light &amp; heat · Temperature / humidity / VPD by stage · Watering: over vs under vs heat droop · Wind burn</span><span class="kb-pop__note">GrowBuddy knowledge base · 03-environmental-and-watering.md</span></span></span> gives the trigger as 85–86 °F. That entry is the outlier. A knowledge base gap is now logged for it.</p>
+
+<div class="flag info">
+  <h3>The probe reads too low</h3>
+  <p>The photo shows two probe tips. They are wound onto the cord of the <b>lower</b> trellis. They sit in the middle of the canopy. Leaves shade them, and colas sit above them.</p>
+  <p><b>So 78–84 °F is a floor for the bud zone, not a ceiling.</b> The top colas are hotter than this. Nobody has measured them. The zone with the worst foxtailing is the zone with no data.</p>
+  <p>The placement does two things well: it sits inside the canopy, and it stays out of the direct light beam. A probe in the beam over-reads from radiant heat.</p>
+  <a href="images/flag-probe.jpg"><img src="images/flag-probe.jpg" alt="Two temperature probe tips tied to the lower trellis cord, boxed in red"></a>
+</div>
+
+<div class="box key">
+  <h3>The most useful number in this report</h3>
+  <p>The night temperature is 78–81 °F. The day temperature is 78–84 °F. The two are almost the same.</p>
+  <p>The light is off for 12 hours each night. If the light were the main heat source, the temperature would fall when the light goes off. It does not fall.</p>
+  <p><b>Therefore the room sets the tent temperature, and the room is about 78 °F.</b> The light adds only a few degrees at the top of the range.</p>
+  <p>This changes the fix. A tent cannot go below the temperature of the air it pulls in. <b>Cool the room first. Dim the light second.</b></p>
+</div>
+
+</details>
+
+<details class="report-section" open>
+<summary><h2 id="5-recommendations">5 · Recommendations</h2><span class="report-section__chev" aria-hidden="true"></span></summary>
+
+
+<h3>Temperature — do these first</h3>
+<ol class="next">
+  <li><b>Move a probe to the height of the top colas.</b> Take one reading with the light on. Keep the probe out of the direct beam. You cannot control a temperature that you do not measure.</li>
+  <li><b>Cool the room that feeds the tent.</b> This is the primary lever. Use an air conditioner, or move cooler air into the room. Target a room temperature under 74 °F.</li>
+  <li><b>Raise the exhaust fan one step.</b> More air exchange moves the tent closer to the room temperature.</li>
+  <li><b>Aim for under 80 °F at the top colas with the light on.</b> This is the Grow Weed Easy ceiling and the MSNL threshold.</li>
+  <li><b>Build a night drop of 8–10 °F.</b> A cooler room gives this for free once the light goes off.</li>
+</ol>
+
+<h3>Light</h3>
+<ol class="next">
+  <li><b>Dim the SF-2000 Pro by about 10%.</b> Target about 700 PPFD at the top colas. MSNL gives 700–1000 PPFD as the flowering range, so 700 stays inside it.</li>
+  <li><b>Or raise the fixture 2–3 inches.</b> This lowers both the light level and the radiant heat at the canopy.</li>
+  <li>The plant is 5–12 days from harvest. It does not need maximum light now. The cost of this change is very low.</li>
+</ol>
+
+<h3>Humidity — change nothing</h3>
+<p>Do <b>not</b> raise the humidity. The VPD number is high, and a higher humidity would correct it. But low humidity plus warm air is hostile to bud rot. <span class="kb-ref" tabindex="0" role="button" aria-label="Knowledge base: 05 · Diseases (Mold, Rot, Mildew)"><span class="kb-ref__icon" aria-hidden="true">📖</span><span class="kb-ref__label">KB 05</span><span class="kb-pop" role="tooltip"><span class="kb-pop__title">05 · Diseases (Mold, Rot, Mildew)</span><span class="kb-pop__body">Fungal problems are mostly an environment story: humidity, temperature, and airflow. Prevention beats treatment because by the time buds are affected, that material is usually lost.</span><span class="kb-pop__sections">Covers: Bud rot / Botrytis (the dangerous one in flower) · Powdery mildew (PM) · Leaf septoria (yellow leaf spot) — outdoor · Root rot (Pythium) · Prevention (covers all three)</span><span class="kb-pop__note">GrowBuddy knowledge base · 05-diseases.md</span></span></span> says botrytis needs humidity above 60% and temperatures of 60–75 °F. This tent sits outside both conditions. The colas are dense and the harvest is close. Keep that protection.</p>
+
+<div class="box">
+  <h3>What these changes will and will not do</h3>
+  <p><b>They will stop new spires.</b> <span class="kb-ref" tabindex="0" role="button" aria-label="Knowledge base: 03 · Environmental Stress &amp; Watering"><span class="kb-ref__icon" aria-hidden="true">📖</span><span class="kb-ref__label">KB 03</span><span class="kb-pop" role="tooltip"><span class="kb-pop__title">03 · Environmental Stress &amp; Watering</span><span class="kb-pop__body">These cause more &quot;deficiency&quot; misdiagnoses than actual deficiencies. Check here early.</span><span class="kb-pop__sections">Covers: pH &amp; nutrient lockout · Nutrient burn vs light burn vs heat (the big three look-alikes) · Light &amp; heat · Temperature / humidity / VPD by stage · Watering: over vs under vs heat droop · Wind burn</span><span class="kb-pop__note">GrowBuddy knowledge base · 03-environmental-and-watering.md</span></span></span> is clear on this point.</p>
+  <p><b>They will not undo the spires that already formed.</b> Those towers stay until harvest.</p>
+  <p><b>The real value is the next grow.</b> Run the tent under 80 °F from day one. Build a night drop. Record the temperature and the humidity from day one.</p>
+</div>
+
+</details>
+
+<details class="report-section" open>
+<summary><h2 id="6-effect-on-the-grow">6 · Effect on the harvest and the yield</h2><span class="report-section__chev" aria-hidden="true"></span></summary>
+
+
+<p><b>Harvest.</b> Foxtail spires push young white pistils onto ripe buds. So pistil colour over-reads ripeness. This report finds spires at the top plane <b>and</b> the middle plane. Therefore do not judge ripeness from pistils at any plane. Use a loupe. Check every 2 days. Sample the calyx surface, not the sugar leaf.</p>
+
+<p><b>Yield.</b> The estimate stays at ~100–150 g dried, with ~120 g as the central figure. MSNL states that stress foxtail "can reduce density and yield" and gives the bud an "airy, fluffy and lightweight composition". The bottom-tier photos also confirm that the understory adds almost nothing. Both facts cap the number.</p>
+
+<p><b>Bud rot.</b> The grower inspected the colas by hand on 8/9 and found no bud rot. The tent conditions are hostile to botrytis. Repeat the hand check on cut day.</p>
+
+</details>
+
+<details class="report-section" open>
+<summary><h2 id="7-assumptions-and-sources">7 · Assumptions and sources</h2><span class="report-section__chev" aria-hidden="true"></span></summary>
+
+
+<h3>Assumptions</h3>
+<ul>
+  <li>The temperature and humidity figures are typical values. They are not logged minimum and maximum values. Real peaks can exceed 84 °F.</li>
+  <li>The instrument model is unknown. Its accuracy is unknown.</li>
+  <li>The VPD figures assume a leaf temperature 2 °F below the air temperature.</li>
+  <li>The light level is unchanged since the 7/13 measurement of just below 800 PPFD.</li>
+  <li>I identified the top plane and the middle plane from the geometry of the photos. I did not measure the heights.</li>
+  <li>The photos are 1080×1920 (2.1 megapixels). The phone can produce 12.5 megapixels. Fine surface detail stays at the limit of what these files resolve.</li>
+  <li>The claim that foxtail folds trap moisture is my own inference. No source supports it. Treat it as a hunch.</li>
+</ul>
+
+<h3>Sources</h3>
+<ul>
+  <li><span class="kb-ref" tabindex="0" role="button" aria-label="Knowledge base: 03 · Environmental Stress &amp; Watering"><span class="kb-ref__icon" aria-hidden="true">📖</span><span class="kb-ref__label">KB 03 · Environmental and watering</span><span class="kb-pop" role="tooltip"><span class="kb-pop__title">03 · Environmental Stress &amp; Watering</span><span class="kb-pop__body">These cause more &quot;deficiency&quot; misdiagnoses than actual deficiencies. Check here early.</span><span class="kb-pop__sections">Covers: pH &amp; nutrient lockout · Nutrient burn vs light burn vs heat (the big three look-alikes) · Light &amp; heat · Temperature / humidity / VPD by stage · Watering: over vs under vs heat droop · Wind burn</span><span class="kb-pop__note">GrowBuddy knowledge base · 03-environmental-and-watering.md</span></span></span> — foxtail types, light and heat, VPD table.</li>
+  <li><span class="kb-ref" tabindex="0" role="button" aria-label="Knowledge base: 05 · Diseases (Mold, Rot, Mildew)"><span class="kb-ref__icon" aria-hidden="true">📖</span><span class="kb-ref__label">KB 05 · Diseases</span><span class="kb-pop" role="tooltip"><span class="kb-pop__title">05 · Diseases (Mold, Rot, Mildew)</span><span class="kb-pop__body">Fungal problems are mostly an environment story: humidity, temperature, and airflow. Prevention beats treatment because by the time buds are affected, that material is usually lost.</span><span class="kb-pop__sections">Covers: Bud rot / Botrytis (the dangerous one in flower) · Powdery mildew (PM) · Leaf septoria (yellow leaf spot) — outdoor · Root rot (Pythium) · Prevention (covers all three)</span><span class="kb-pop__note">GrowBuddy knowledge base · 05-diseases.md</span></span></span> — botrytis conditions, flowering temperature and humidity.</li>
+  <li><span class="kb-ref" tabindex="0" role="button" aria-label="Knowledge base: 10 · Symptom Index (reverse lookup)"><span class="kb-ref__icon" aria-hidden="true">📖</span><span class="kb-ref__label">KB 10 · Symptom index</span><span class="kb-pop" role="tooltip"><span class="kb-pop__title">10 · Symptom Index (reverse lookup)</span><span class="kb-pop__body">Start here when you have a symptom and want candidates fast. Find the symptom, read the ranked causes, then open the linked file and confirm with the framework. Causes are listed most-likely-first for a typical grow.</span><span class="kb-pop__sections">Covers: Yellowing · Tips &amp; edges · Spots &amp; color · Whole-plant / structural (not a leaf color) · Shape, posture, growth · Holes / eaten tissue (chewing damage — mostly outdoor)</span><span class="kb-pop__note">GrowBuddy knowledge base · 10-symptom-index.md</span></span></span> — the two foxtail rows.</li>
+  <li><span class="kb-ref" tabindex="0" role="button" aria-label="Knowledge base: Papaya Crush"><span class="kb-ref__icon" aria-hidden="true">📖</span><span class="kb-ref__label">Strain file · Papaya Crush</span><span class="kb-pop" role="tooltip"><span class="kb-pop__title">Papaya Crush</span><span class="kb-pop__body">Breeder: Bloom Seed Co. · Lineage: Papaya × Bolo Runtz · Type: indica-leaning hybrid · THC: ~25%</span><span class="kb-pop__sections">Covers: Grow facts (sourced) · Diagnostic flags (sourced only) · Assumptions &amp; to-verify (NOT established fact) · Grower notes (external report — r/BloomSeedCompany journal `1rncu6s`, retrieved via browser)</span><span class="kb-pop__note">GrowBuddy knowledge base · strains/papaya-crush.md</span></span></span> — breeder data, and the breeder note to keep the environment stable.</li>
+  <li><a href="https://www.msnlseeds.com/blog/why-do-some-cannabis-plants-foxtail/">MSNL · Why do some cannabis plants foxtail</a> — the 26 °C threshold, the 700–1000 PPFD range, the yield effect.</li>
+  <li><a href="https://www.growweedeasy.com/temperature">Grow Weed Easy · Temperature tutorial</a> — the 80 °F ceiling, the 10 °F day-to-night difference.</li>
+  <li><a href="https://sensiseeds.com/en/blog/cannabis-heat-stress-how-to-avoid-and-treat-it/">Sensi Seeds · Cannabis heat stress</a> — flowering temperature bands by day and night.</li>
+</ul>
+
+</details>
+
+<details class="report-section" open>
+<summary><h2 id="8-the-photo-set">8 · The photo set</h2><span class="report-section__chev" aria-hidden="true"></span></summary>
+
+
+<div class="grid">
+  <figure><a href="images/01-top-colas-side.jpg"><img src="images/01-top-colas-side.jpg" alt="Top colas from the side"></a><figcaption><b>1 · Top colas, side view.</b> Spires on both colas. Purple sugar leaves.</figcaption></figure>
+  <figure><a href="images/02-canopy-interior.jpg"><img src="images/02-canopy-interior.jpg" alt="Canopy interior with a branch held aside"></a><figcaption><b>2 · Canopy interior.</b> Open understory. No mould and no webbing.</figcaption></figure>
+  <figure><a href="images/03-canopy-topdown.jpg"><img src="images/03-canopy-topdown.jpg" alt="Canopy from above through the net"></a><figcaption><b>3 · Canopy from above.</b> Purple now on the fan leaf blades.</figcaption></figure>
+  <figure><a href="images/04-mid-canopy.jpg"><img src="images/04-mid-canopy.jpg" alt="Mid-canopy buds between the nets"></a><figcaption><b>4 · Middle plane.</b> Smaller, looser buds with short spires.</figcaption></figure>
+  <figure><a href="images/05-probe-placement.jpg"><img src="images/05-probe-placement.jpg" alt="Temperature probe on the lower trellis"></a><figcaption><b>5 · Probe placement.</b> On the lower trellis, below the colas.</figcaption></figure>
+  <figure><a href="images/06-low-tier-buds-1.jpg"><img src="images/06-low-tier-buds-1.jpg" alt="Lowest tier bud sites in a hand"></a><figcaption><b>6 · Bottom tier.</b> Immature nubs with white pistils. No foxtail.</figcaption></figure>
+  <figure><a href="images/07-low-tier-buds-2.jpg"><img src="images/07-low-tier-buds-2.jpg" alt="More lowest tier bud sites near the soil"></a><figcaption><b>7 · Bottom tier, second view.</b> Bare stems above dry soil.</figcaption></figure>
+  <figure><a href="images/08-side-profile-one-stem.jpg"><img src="images/08-side-profile-one-stem.jpg" alt="Side profile of one stem from base to top"></a><figcaption><b>8 · One stem, base to top.</b> The whole gradient in one frame.</figcaption></figure>
+</div>
+
+</details>
+
+<footer>
+  Papaya Crush · flower day ~67 · 2 × 2 AC Infinity tent · SF-2000 Pro · living soil, no-till.<br>
+  Special single-topic report. It covers foxtailing, light and temperature only. It does not replace a full check-in.
+</footer>
+
+</div>
+<script src="../kb-popover.js" defer></script>
+<script src="../lightbox.js" defer></script>
+</body>
+</html>
